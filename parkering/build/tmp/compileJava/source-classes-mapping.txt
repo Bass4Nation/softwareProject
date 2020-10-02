@@ -1,6 +1,0 @@
-no/hiof/model/ParkSpot.java
- no.hiof.model.ParkSpot
-no/hiof/model/Main.java
- no.hiof.model.Main
-no/hiof/Application.java
- no.hiof.Application
