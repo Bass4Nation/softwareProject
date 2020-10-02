@@ -1,8 +1,18 @@
 
 <html>
+<head>
+  <meta charset="utf-8">
+  <title>Software Oppgave</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i|Ubuntu:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="media/stil/master.css">
+  <script src="media/js/temp.js"></script>
+</head>
+
+
 <body>
 <header>
   <img src="https://itstud.hiof.no/~kristoss/secondYear/finnParking/views/media/logo.png" alt="logo" id="logo"/>
+
 </header>
 <main>
   <section id="postHeader">
