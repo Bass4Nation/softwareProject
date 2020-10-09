@@ -16,13 +16,17 @@ main {
   margin-top: 100px;
   min-height: 40em;
   height: auto;
-  width: 80em;
+  max-width: 80em;
   background-color: #2e2e2e;
   border-radius: 5px;
   border: solid 1px #404040;
   -webkit-box-shadow: 0px 0px 33px -3px rgba(0, 0, 0, 0.48);
   -moz-box-shadow: 0px 0px 33px -3px rgba(0, 0, 0, 0.48);
   box-shadow: 0px 0px 33px -3px rgba(0, 0, 0, 0.48);
+}
+
+.buttons{
+  
 }
 
 header {
@@ -46,43 +50,6 @@ header {
 
 .headTitle {
   display: inline-block;
-}
-
-#postHeader {
-  font-family: Ubuntu !important;
-  color: #d4ffbf;
-  text-align: center;
-  border-bottom: solid 2px #d4ffbf;
-  padding-bottom: 5px;
-  clear: both;
-  font-size: 1.5em;
-  margin-bottom: 15px;
-}
-
-#leftBlock {
-  padding: 15px;
-  width: 38em;
-  height: 40em;
-  float: left;
-  overflow: hidden;
-}
-
-#rightBlock {
-  padding: 15px;
-  width: 35em;
-  min-height: 20em;
-  height: auto;
-  float: right;
-}
-
-#buttonBlock {
-  width: 35em;
-  min-height: 3em;
-  float: right;
-  clear: right;
-  margin: 20px;
-  text-align: left;
-  margin-bottom: 5em;
 }
 
 .btn {
