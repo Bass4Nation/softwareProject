@@ -43,11 +43,19 @@
 </html>
 
 <script>
-Vue.component("test", {
-  template: "#test",
+Vue.component("annonse", {
+  template: "#annonse",
   data: () => ({
     observations: [],
   }),
+  created() {
+    fetch("/api/observations")
+        .then(res => res.json())
+        .then(res => {
+          this.observations = res;
+        })
+        .catch(() => alert("Error while fetching observations"));
+  }
 });
 </script>
 
