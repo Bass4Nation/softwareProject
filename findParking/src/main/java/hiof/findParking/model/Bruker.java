@@ -9,6 +9,10 @@ public class Bruker extends KontaktInfo {
         this.navn = navn;
     }
 
+    public Bruker(String adresse, String navn) {
+        super(adresse);
+        this.navn = navn;
+    }
 
     public String getNavn() {
         return navn;

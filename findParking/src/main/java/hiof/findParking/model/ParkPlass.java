@@ -5,6 +5,10 @@ public class ParkPlass {
     private int pris;
     private boolean status;
 
+    public ParkPlass(int pris) {
+        this.pris = pris;
+    }
+
     public ParkPlass(String utleier, int pris, boolean status) {
         this.utleier = utleier;
         this.pris = pris;

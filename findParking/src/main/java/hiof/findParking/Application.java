@@ -1,6 +1,6 @@
 package hiof.findParking;
 
-import hiof.findParking.Repository.*;
+import hiof.findParking.repository.*;
 import hiof.findParking.Controller.Controller;
 import io.javalin.Javalin;
 import io.javalin.plugin.rendering.vue.VueComponent;

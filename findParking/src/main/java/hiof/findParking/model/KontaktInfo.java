@@ -8,6 +8,11 @@ public abstract class KontaktInfo {
         Adresse = adresse;
         this.telefonnummer = telefonnummer;
     }
+
+    public KontaktInfo(String adresse) {
+        Adresse = adresse;
+    }
+
     public KontaktInfo(){}
 
     public String getEpost() {
