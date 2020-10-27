@@ -31,57 +31,7 @@
         }
     });
 </script>
+
 <style>
-    li{
-        list-style-type: none;
-    }
-
-    .observation-overview-list{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .observation-overview-list li{
-        padding: 10px;
-        border: 1px solid white;
-        border-radius: 15px;
-    }
-
-    .link-to-observation-details{
-        width: 400px;
-        height:100px;
-        text-decoration: none;
-        color: white;
-    }
-
-    div.single-observation-container{
-        overflow: hidden;
-        width: 500px;
-        background-color: #000000;
-        margin: 0 auto;
-        opacity: 0.96;
-        text-align: center;
-    }
-
-    img.observation-cover-image {
-        height: 200px;
-        width: 200px;
-    }
-
-    div.single-observation-container:hover{
-        opacity: 1.0;
-        overflow: hidden;
-        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
-        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
-        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
-    }
-
-    img.cover-image-frontpage {
-        height: auto;
-        width: 50%;
-        padding-bottom: 20px;
-        max-height: 200px;
-    }
-
+  @import '/stil/master.css';
 </style>

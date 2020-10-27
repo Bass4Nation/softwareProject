@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1c1c1c;
+  background-image: url(../background.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  margin: auto;
+  margin-top: 100px;
+  min-height: 40em;
+  height: auto;
+  max-width: 80em;
+  background-color: #2e2e2e;
+  border-radius: 5px;
+  border: solid 1px #404040;
+  -webkit-box-shadow: 0px 0px 33px -3px rgba(0, 0, 0, 0.48);
+  -moz-box-shadow: 0px 0px 33px -3px rgba(0, 0, 0, 0.48);
+  box-shadow: 0px 0px 33px -3px rgba(0, 0, 0, 0.48);
+}
+
+.buttons{
+  
+}
+
+header {
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+  height: auto;
+  width: 90%;
+  background-color: #2e2e2e;
+  border-radius: 5px;
+  border: solid 1px #404040;
+  -webkit-box-shadow: 0px 0px 33px -3px rgba(0, 0, 0, 0.48);
+  -moz-box-shadow: 0px 0px 33px -3px rgba(0, 0, 0, 0.48);
+  box-shadow: 0px 0px 33px -3px rgba(0, 0, 0, 0.48);
+  padding: 5px;
+}
+
+#logo {
+  display: inline-block;
+}
+
+.headTitle {
+  display: inline-block;
+}
+
+.btn {
+  font-family: Ubuntu !important;
+  font-weight: bold;
+  background-color: #1b1b1b;
+  padding: 10px;
+  color: white;
+  border: solid #d4ffbf 3px;
+  cursor: pointer;
+  margin-right: 3em;
+  width: 10em;
+  -webkit-box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.35);
+}
+
+.btn:hover {
+  transition: .5s;
+  background-color: #d4ffbf;
+  padding: 10px;
+  color: #1b1b1b;
+  border: solid #d4ffbf 3px;
+}
+
+.infotittel {
+  color: #d4ffbf;
+  font-weight: bold;
+  font-family: Ubuntu !important;
+}
+
+section p {
+  color: white;
+  font-family: helvetica, sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid #1b1b1b;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: #696969;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
