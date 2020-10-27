@@ -14,8 +14,14 @@ public class Controller {
     }
 
     public void getAllAnnonser(Context context) {
-        context.json(repository.getPlanetSystems());
+        context.json(repository.getAlleAnnonser());
     }
+
+    public void getAnnonser(Context context) {
+        String planetSystemName = context.pathParam("alle-annonser-id");
+        context.json(repository.getAlleAnnonse(planetSystemName));
+    }
+
 
 
 

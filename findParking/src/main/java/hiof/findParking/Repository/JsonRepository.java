@@ -1,4 +1,4 @@
-package hiof.findParking.Repository;
+package hiof.findParking.repository;
 
 public class JsonRepository {
 }

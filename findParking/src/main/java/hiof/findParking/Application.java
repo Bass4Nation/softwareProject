@@ -9,15 +9,18 @@ public class Application {
 //    Laget for å teste hele prosjektet pluss nettsiden.
 
     public static void main(String[] args) {
-        Javalin app = Javalin.create().start();
+        Javalin app = Javalin.create().start(7009);
 
         app.config.enableWebjars();
 
         // ----------------------------Views---------------------------
-        app.get("/alleAnnonser", new VueComponent("alleAnnonser"));
-        app.before("/", ctx -> ctx.redirect("/alleAnnonser"));
+        app.before("/", ctx -> ctx.redirect("/alle-annonser"));
 
-        app.get("/annonse", new VueComponent("annonse"));
+        app.get("/alle-annonser", new VueComponent("alle-annonser"));
+        app.get("/alle-annonser/:alle-annonser-id", new VueComponent("alle-annonser-detaljer"));
+
+        app.get("/alleAnnonser/:annonse", new VueComponent("annonse"));
+
 
 
         IRepository repository = new Repository();
@@ -25,7 +28,9 @@ public class Application {
 
         //-----------------------------API -------------------------------
 
-        app.get("/api/alleAnnonser", controller :: getAllAnnonser);
+        app.get("/api/alle-annonser", controller :: getAllAnnonser);
+        app.get("/api/alle-annonser/:alle-annonser-id", controller::getAnnonser);
+
 //        app.get("/api/alleAnnonser/:annonse", controller :: annonse);
 
 

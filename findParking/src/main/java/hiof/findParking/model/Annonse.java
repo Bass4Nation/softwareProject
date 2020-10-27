@@ -4,6 +4,7 @@ public class Annonse extends Info{
     private String tittel, kommentarer;
     private int antallPlasser;
     private int pris;
+    private String pictureUrl;
     private int id;
     private static int teller;
 
@@ -23,13 +24,20 @@ public class Annonse extends Info{
 //        this.antallPlasser = antallPlasser;
 //    }
 
-    public Annonse(String adresse, String navn, String beskrivelse, String tittel, int pris) {
+    public Annonse(String adresse, String navn, String beskrivelse, String tittel, int pris, String pictureUrl) {
         super(adresse, navn, beskrivelse);
         this.tittel = tittel;
         this.pris = pris;
+        this.pictureUrl = pictureUrl;
         this.id = teller++;
     }
-//    public Annonse(){}
+
+    public Annonse(String adresse, String navn, String beskrivelse, String tittel, String pictureUrl) {
+        super(adresse, navn, beskrivelse);
+        this.tittel = tittel;
+        this.pictureUrl = pictureUrl;
+        this.id = teller++;
+    }
 
     public String getTittel() {
         return tittel;
@@ -61,6 +69,22 @@ public class Annonse extends Info{
 
     public void setPris(int pris) {
         this.pris = pris;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getPictureUrl() {
+        return pictureUrl;
+    }
+
+    public void setPictureUrl(String pictureUrl) {
+        this.pictureUrl = pictureUrl;
     }
 
     @Override
