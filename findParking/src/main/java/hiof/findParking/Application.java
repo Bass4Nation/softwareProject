@@ -14,7 +14,7 @@ public class Application {
         app.config.enableWebjars();
 
         // ----------------------------Views---------------------------
-        app.get("/", new VueComponent("annonse"));
+        app.get("/", new VueComponent("test"));
         app.get("/annonse", new VueComponent("annonse"));
 
 //        Må ha dette under i vue og endre "test" over og under til det du vil kalle vue filen.
@@ -32,8 +32,8 @@ public class Application {
 
         //-----------------------------API -------------------------------
 
-        app.get("/api/alleAnnonser", controller :: alleAnnonser);
-        app.get("/api/alleAnnonser/:annonse", controller :: annonse);
+        app.get("/api/alleAnnonser", controller :: getAllAnnonser);
+//        app.get("/api/alleAnnonser/:annonse", controller :: annonse);
 
 
 

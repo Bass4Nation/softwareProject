@@ -4,7 +4,8 @@ public class Annonse extends Info{
     private String tittel, kommentarer;
     private int antallPlasser;
     private int pris;
-
+    private int id;
+    private static int teller;
 
 
 //    public Annonse(String tittel, String kommentarer, int antallPlasser) {
@@ -26,8 +27,9 @@ public class Annonse extends Info{
         super(adresse, navn, beskrivelse);
         this.tittel = tittel;
         this.pris = pris;
+        this.id = teller++;
     }
-    public Annonse(){}
+//    public Annonse(){}
 
     public String getTittel() {
         return tittel;

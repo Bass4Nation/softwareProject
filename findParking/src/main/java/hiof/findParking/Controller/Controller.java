@@ -13,18 +13,23 @@ public class Controller {
         this.repository = repository;
     }
 
-
-
-    public void alleAnnonser(Context context){
-        context.json(repository.getAllInfo());
+    public void getAllAnnonser(Context context) {
+        context.json(repository.getPlanetSystems());
     }
 
-    public void annonse(Context context){
-        String stedId = context.pathParam(":sted-id");
-        context.json(repository.getInfo(stedId));
 
 
-    }
+
+//    public void alleAnnonser(Context context){
+//        context.json(repository.getAllInfo());
+//    }
+
+//    public void annonse(Context context){
+//        String stedId = context.pathParam(":sted-id");
+//        context.json(repository.getInfo(stedId));
+//
+//
+//    }
 
 
 }
