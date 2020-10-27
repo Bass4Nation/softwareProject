@@ -14,18 +14,11 @@ public class Application {
         app.config.enableWebjars();
 
         // ----------------------------Views---------------------------
-        app.get("/", new VueComponent("test"));
+        app.get("/alleAnnonser", new VueComponent("alleAnnonser"));
+        app.before("/", ctx -> ctx.redirect("/alleAnnonser"));
+
         app.get("/annonse", new VueComponent("annonse"));
 
-//        Må ha dette under i vue og endre "test" over og under til det du vil kalle vue filen.
-//        <script>
-//                Vue.component("test", {
-//                        template: "#test",
-//                data: () => ({
-//                observations: [],
-//              }),
-//            });
-//        </script>
 
         IRepository repository = new Repository();
         Controller controller = new Controller(repository);
