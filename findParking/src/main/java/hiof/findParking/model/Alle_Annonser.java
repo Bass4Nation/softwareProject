@@ -28,7 +28,7 @@ public class Alle_Annonser implements Comparable<Alle_Annonser>{
         for (Annonse annonse : annonser) {
             if (annonse.getTittel().equals(tittel))
                 return annonse;
-        }++
+        }
         return null;
     }
 

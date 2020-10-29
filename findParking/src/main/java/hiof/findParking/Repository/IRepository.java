@@ -14,5 +14,8 @@ public interface IRepository {
 
     ArrayList<Alle_Annonser> getAlleAnnonser();
     Alle_Annonser getAlleAnnonse(String AlleAnnonseName);
+    Annonse getAnnonse(String planetSystemName, String id);
+    ArrayList<Annonse> getAnnonser(String AlleAnnonseName);
+
 
 }

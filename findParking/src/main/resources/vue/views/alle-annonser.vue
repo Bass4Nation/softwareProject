@@ -31,52 +31,131 @@ Vue.component("alle-annonser", {
   }
 });
 </script>
-<style>
-li{
-  list-style-type: none;
+<style lang="css">
+* {
+  margin: 0;
+  padding: 0;
 }
-
-.planet-system-overview-list{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+body {
+  background-color: #1c1c1c;
+  background-image: url(https://itstud.hiof.no/~kristoss/secondYear/finnParking/views/media/background.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-.planet-system-overview-list li{
-  padding: 10px;
-  border: 1px solid white;
-  border-radius: 15px;
-}
-
-.link-to-planet-system-details{
-  width: 400px;
-  height:100px;
-  text-decoration: none;
-  color: white;
-}
-
-div.single-planet-system-container{
-  overflow: hidden;
-  width: 500px;
-  background-color: #000000;
-  margin: 0 auto;
-  opacity: 0.96;
-  text-align: center;
-}
-
-div.single-planet-system-container:hover{
-  opacity: 1.0;
-  overflow: hidden;
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.25);
-}
-
-img.cover-image-frontpage {
+main {
+  margin: auto;
+  margin-top: 100px;
+  min-height: 40em;
   height: auto;
-  width: 100%;
-  padding-bottom: 20px;
-  max-height: 280px;
+  width: 80em;
+  background-color: #2e2e2e;
+  border-radius: 5px;
+  border: solid 1px #404040;
+  -webkit-box-shadow: 0px 0px 33px -3px rgba(0, 0, 0, 0.48);
+  -moz-box-shadow: 0px 0px 33px -3px rgba(0, 0, 0, 0.48);
+  box-shadow: 0px 0px 33px -3px rgba(0, 0, 0, 0.48);
 }
-
+header {
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+  height: auto;
+  width: 90%;
+  background-color: #2e2e2e;
+  border-radius: 5px;
+  border: solid 1px #404040;
+  -webkit-box-shadow: 0px 0px 33px -3px rgba(0, 0, 0, 0.48);
+  -moz-box-shadow: 0px 0px 33px -3px rgba(0, 0, 0, 0.48);
+  box-shadow: 0px 0px 33px -3px rgba(0, 0, 0, 0.48);
+  padding: 5px;
+}
+#logo {
+  display: inline-block;
+}
+.headTitle {
+  display: inline-block;
+}
+#postHeader {
+  font-family: Ubuntu !important;
+  color: #d4ffbf;
+  text-align: center;
+  border-bottom: solid 2px #d4ffbf;
+  padding-bottom: 5px;
+  clear: both;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+#leftBlock {
+  padding: 15px;
+  width: 38em;
+  height: 40em;
+  float: left;
+  overflow: hidden;
+}
+#rightBlock {
+  padding: 15px;
+  width: 35em;
+  min-height: 20em;
+  height: auto;
+  float: right;
+}
+#buttonBlock {
+  width: 35em;
+  min-height: 3em;
+  float: right;
+  clear: right;
+  margin: 20px;
+  text-align: left;
+  margin-bottom: 5em;
+}
+.btn {
+  font-family: Ubuntu !important;
+  font-weight: bold;
+  background-color: #1b1b1b;
+  padding: 10px;
+  color: white;
+  border: solid #d4ffbf 3px;
+  cursor: pointer;
+  margin-right: 3em;
+  width: 10em;
+  -webkit-box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.35);
+}
+.btn:hover {
+  transition: .5s;
+  background-color: #d4ffbf;
+  padding: 10px;
+  color: #1b1b1b;
+  border: solid #d4ffbf 3px;
+}
+.infotittel {
+  color: #d4ffbf;
+  font-weight: bold;
+  font-family: Ubuntu !important;
+}
+section p {
+  color: white;
+  font-family: helvetica, sans-serif;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: #696969;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
 </style>

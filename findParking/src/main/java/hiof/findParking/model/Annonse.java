@@ -1,7 +1,7 @@
 package hiof.findParking.model;
 
 public class Annonse extends Info{
-    private String tittel, kommentarer;
+    private String name, kommentarer;
     private int antallPlasser;
     private int pris;
     private String pictureUrl;
@@ -24,9 +24,9 @@ public class Annonse extends Info{
 //        this.antallPlasser = antallPlasser;
 //    }
 
-    public Annonse(String adresse, String navn, String beskrivelse, String tittel, int pris, String pictureUrl) {
+    public Annonse(String adresse, String navn, String beskrivelse, String name, int pris, String pictureUrl) {
         super(adresse, navn, beskrivelse);
-        this.tittel = tittel;
+        this.name = name;
         this.pris = pris;
         this.pictureUrl = pictureUrl;
         this.id = teller++;
@@ -34,17 +34,17 @@ public class Annonse extends Info{
 
     public Annonse(String adresse, String navn, String beskrivelse, String tittel, String pictureUrl) {
         super(adresse, navn, beskrivelse);
-        this.tittel = tittel;
+        this.name = tittel;
         this.pictureUrl = pictureUrl;
         this.id = teller++;
     }
 
     public String getTittel() {
-        return tittel;
+        return name;
     }
 
     public void setTittel(String tittel) {
-        this.tittel = tittel;
+        this.name = tittel;
     }
 
     public String getKommentarer() {
@@ -89,7 +89,7 @@ public class Annonse extends Info{
 
     @Override
     public String toString(){
-        return String.format("Annonsetittel %s, pris: %d kr/t, beskrivelse: %s, eier: %s, addresse: %s ",tittel, pris,getBeskrivelse(), getNavn(), getAdresse());
+        return String.format("Annonsetittel %s, pris: %d kr/t, beskrivelse: %s, eier: %s, addresse: %s ",name, pris,getBeskrivelse(), getNavn(), getAdresse());
     }
 
 }

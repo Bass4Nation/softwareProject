@@ -23,8 +23,8 @@ public class Repository implements IRepository {
         Alle_Annonser obsListe = new Alle_Annonser("Alle Annonser");
 //------------------------------------------------------ Annonser ----------------------------
         Bruker bruker1 = new Bruker("norman@nisse.no", "Adresse 12B", "10259654", "Ola Nordman");
-        obsListe.addAnnonse(new Annonse(bruker1.getAdresse(),bruker1.getNavn(),"Dorime noe rart beskrivelse", "En fin plass i Halden", 50, "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSWXwdOz6OapoLyHg8lCBtdcgaa0ABsBSbLMg&usqp=CAU"));
-        obsListe.addAnnonse(new Annonse(bruker1.getAdresse(),bruker1.getNavn(),"Dette er annonse 2", "Billig plass i Halden", 20, "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSWXwdOz6OapoLyHg8lCBtdcgaa0ABsBSbLMg&usqp=CAU"));
+        obsListe.addAnnonse(new Annonse(bruker1.getAdresse(),bruker1.getNavn(),"Dorime noe rart beskrivelse", "En fin plass i Halden", 50, "https://mediadc.brightspotcdn.com/dims4/default/7911b12/2147483647/strip/true/crop/2290x1322+0+0/resize/2290x1322!/quality/90/?url=https%3A%2F%2Fmediadc.brightspotcdn.com%2F62%2F05%2Fbbcbb53c660de0e2576a8de0491d%2Fe023efc13eb249b7634a4046b6fe6800.jpg"));
+        obsListe.addAnnonse(new Annonse(bruker1.getAdresse(),bruker1.getNavn(),"Dette er annonse 2 beskrivelse", "Billig plass i Halden", 20, "https://www.goturpin.com/pages/news-and-announcements/image/section-image/parking-8.jpg"));
 
 
         annonser.add(obsListe);
@@ -47,4 +47,16 @@ public class Repository implements IRepository {
         }
         return null;
     }
+
+
+    @Override
+    public Annonse getAnnonse(String planetSystemName, String planetName) {
+        return getAlleAnnonse(planetSystemName).getAnnonse(planetName);
+    }
+
+    @Override
+    public ArrayList<Annonse> getAnnonser(String planetSystemName) {
+        return getAlleAnnonse(planetSystemName).getAnnonser();
+    }
+
 }
