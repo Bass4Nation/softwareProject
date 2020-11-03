@@ -52,10 +52,20 @@ public class JsonRepository implements IRepository {
         return allAnnonser;
     }
 
+    public Alle_Annonser getAnnonserFylke(String locName) {
+        for (Alle_Annonser test : allAnnonser)
+            if (test.getName().equals(locName)) {
+                return test;
+            }
+
+        return null;
+    }
+
     @Override
     public Alle_Annonser getAlleAnnonse(String AlleAnnonseName) {
         return null;
     }
+
 
     @Override
     public Annonse getAnnonse(String planetSystemName, String id) {
@@ -68,12 +78,14 @@ public class JsonRepository implements IRepository {
     }
 
 
-    public Object createAnnonse(String filename, String adresse, String navn, String beskrivelse, String name, int pris, String pictureUrl) {
+    public Object createAnnonse(String filename, String fylke,String adresse, String navn, String beskrivelse, String name, int pris, String pictureUrl) {
+        Alle_Annonser currentLoc = getAnnonserFylke(fylke);
 
-            Annonse freshAnnonse = new Annonse(adresse, navn, beskrivelse, name, pris, pictureUrl);
-//Tror noe må tukles med for at den skal akseptere en annen verdi
-            getAlleAnnonser().add(freshAnnonse);
+        if(currentLoc.getName().equals(fylke)) {
+            Annonse aAnnonse = new Annonse(adresse, navn, beskrivelse, name, pris, pictureUrl);
 
+            getAnnonserFylke(fylke).getAnnonser().add(aAnnonse);
+        }
 
         File file = writeToFile(filename, allAnnonser);
 

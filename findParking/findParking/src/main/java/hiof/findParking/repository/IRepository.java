@@ -16,11 +16,13 @@ public interface IRepository {
 
     //ArrayList<Alle_Annonser> getAlleAnnonser();
     Alle_Annonser getAlleAnnonse(String AlleAnnonseName);
+    Alle_Annonser getAnnonserFylke(String AlleAnnonseName);
     Annonse getAnnonse(String planetSystemName, String id);
     ArrayList<Annonse> getAnnonser(String AlleAnnonseName);
     List<Alle_Annonser> fileReader(String fileGet);
     List<Alle_Annonser> getAlleAnnonser();
-    Object createAnnonse (String filename, String adresse, String navn, String beskrivelse, String name, int pris, String pictureUrl);
+
+    Object createAnnonse (String filename, String flyke,String adresse, String navn, String beskrivelse, String name, int pris, String pictureUrl);
 
 
 
