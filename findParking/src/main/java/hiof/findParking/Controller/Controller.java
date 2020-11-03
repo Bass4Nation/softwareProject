@@ -1,4 +1,4 @@
-package hiof.findParking.Controller;
+package hiof.findParking.controller;
 
 
 import io.javalin.http.Context;
@@ -18,8 +18,8 @@ public class Controller {
     }
 
     public void getAnnonser(Context context) {
-        String planetSystemName = context.pathParam("alle-annonser-id");
-        context.json(repository.getAlleAnnonse(planetSystemName));
+        String fylke = context.pathParam("alle-annonser-id");
+        context.json(repository.getAnnonserFylke(fylke));
     }
 
 

@@ -39,6 +39,8 @@ public class Annonse extends Info{
         this.id = teller++;
     }
 
+    public Annonse(){}
+
     public String getTittel() {
         return name;
     }

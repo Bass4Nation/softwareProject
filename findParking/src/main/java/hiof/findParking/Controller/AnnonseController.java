@@ -1,10 +1,10 @@
-package hiof.findParking.Controller;
+package hiof.findParking.controller;
 
 import hiof.findParking.model.Annonse;
 import hiof.findParking.repository.IRepository;
 import io.javalin.http.Context;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class AnnonseController {
     private IRepository repository;
@@ -17,7 +17,7 @@ public class AnnonseController {
         String planetSystemName = context.pathParam("alle-annonser-id");
         String sortBy = context.queryParam("sort_by");
 
-        ArrayList<Annonse> planets = repository.getAnnonser(planetSystemName);
+        List<Annonse> planets = repository.getAnnonser(planetSystemName);
 
 //        if (sortBy != null) {
 //            switch (sortBy) {

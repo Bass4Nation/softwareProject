@@ -8,7 +8,6 @@ public abstract class Lokasjon {
         Addresse = addresse;
         this.cord = cord;
     }
-
     public Lokasjon(String addresse) {
         Addresse = addresse;
     }

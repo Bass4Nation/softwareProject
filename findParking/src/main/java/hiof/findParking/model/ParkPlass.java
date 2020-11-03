@@ -14,6 +14,7 @@ public class ParkPlass {
         this.pris = pris;
         this.status = status;
     }
+    public ParkPlass(){}
 
     public String getUtleier() {
         return utleier;

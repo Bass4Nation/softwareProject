@@ -14,13 +14,13 @@ import java.util.Arrays;
 import java.util.List;
 
 public class JsonRepository implements IRepository {
-//    public List<Alle_Annonser> allAnnonser = fileReader("Annonser.json");
-private List<Alle_Annonser> allAnnonser = new ArrayList<>();
+    public List<Alle_Annonser> allAnnonser = fileReader("Annonser.json");
+//private List<Alle_Annonser> allAnnonser = new ArrayList<>();
 
-    public JsonRepository() {
-        mangeAnnonser();
-        writeToFile("annonser.json", allAnnonser);
-    }
+//    public JsonRepository() {
+//        mangeAnnonser();
+//        writeToFile("anngonser.json", allAnnonser);
+//    }
 
 
     private void mangeAnnonser() {
@@ -75,6 +75,7 @@ private List<Alle_Annonser> allAnnonser = new ArrayList<>();
         return allAnnonser;
     }
 
+    @Override
     public Alle_Annonser getAnnonserFylke(String locName) {
         for (Alle_Annonser test : allAnnonser)
             if (test.getName().equals(locName)) {
@@ -91,13 +92,20 @@ private List<Alle_Annonser> allAnnonser = new ArrayList<>();
 
 
     @Override
-    public Annonse getAnnonse(String planetSystemName, String id) {
+    public Annonse getAnnonse(String AlleAnnonseName, String annonseId) {
+        int id = Integer.parseInt(annonseId);
+        for (Annonse annonse : getAnnonser(AlleAnnonseName)){
+//            Må endre her om den skal sjekke etter noe annet på en singel annonse
+            if ((annonse.getId() == id)){
+                return annonse;
+            }
+        }
         return null;
     }
 
     @Override
-    public ArrayList<Annonse> getAnnonser(String AlleAnnonseName) {
-        return null;
+    public List<Annonse> getAnnonser(String planetSystemName) {
+        return getAnnonserFylke(planetSystemName).getAnnonser();
     }
 
 

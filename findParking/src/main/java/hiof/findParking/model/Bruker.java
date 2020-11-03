@@ -14,6 +14,8 @@ public class Bruker extends KontaktInfo {
         this.navn = navn;
     }
 
+    public Bruker(){}
+
     public String getNavn() {
         return navn;
     }

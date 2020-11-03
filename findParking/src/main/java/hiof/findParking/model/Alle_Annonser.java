@@ -13,6 +13,8 @@ public class Alle_Annonser implements Comparable<Alle_Annonser>{
         this.name = name;
     }
 
+    public Alle_Annonser(){}
+
     public void addAnnonse(Annonse annonse) {
         annonser.add(annonse);
     }
@@ -32,6 +34,7 @@ public class Alle_Annonser implements Comparable<Alle_Annonser>{
         }
         return null;
     }
+
 
     public void setName(String name) {
         this.name = name;

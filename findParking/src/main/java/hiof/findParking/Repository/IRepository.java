@@ -8,15 +8,15 @@ package hiof.findParking.repository;
 import hiof.findParking.model.Alle_Annonser;
 import hiof.findParking.model.Annonse;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public interface IRepository {
 
     List<Alle_Annonser> getAlleAnnonser();
     Alle_Annonser getAlleAnnonse(String AlleAnnonseName);
+    Alle_Annonser getAnnonserFylke(String AlleAnnonseName);
     Annonse getAnnonse(String AlleAnnonseName, String id);
-    ArrayList<Annonse> getAnnonser(String AlleAnnonseName);
+    List<Annonse> getAnnonser(String AlleAnnonseName);
 
 
 }
