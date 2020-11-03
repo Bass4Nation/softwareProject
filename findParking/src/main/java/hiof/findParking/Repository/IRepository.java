@@ -9,12 +9,13 @@ import hiof.findParking.model.Alle_Annonser;
 import hiof.findParking.model.Annonse;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public interface IRepository {
 
-    ArrayList<Alle_Annonser> getAlleAnnonser();
+    List<Alle_Annonser> getAlleAnnonser();
     Alle_Annonser getAlleAnnonse(String AlleAnnonseName);
-    Annonse getAnnonse(String planetSystemName, String id);
+    Annonse getAnnonse(String AlleAnnonseName, String id);
     ArrayList<Annonse> getAnnonser(String AlleAnnonseName);
 
 

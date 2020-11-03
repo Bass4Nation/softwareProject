@@ -15,7 +15,7 @@ public class Application {
         app.config.enableWebjars();
 
         // ----------------------------Views---------------------------
-        app.before("/", ctx -> ctx.redirect("/alle-annonser/Alle%20Annonser"));
+        app.before("/", ctx -> ctx.redirect("/alle-annonser/Viken"));
 
         app.get("/alle-annonser", new VueComponent("alle-annonser"));
         app.get("/alle-annonser/:alle-annonser-id", new VueComponent("alle-annonsene"));
@@ -25,7 +25,8 @@ public class Application {
 
 
 
-        IRepository repository = new Repository();
+//        IRepository repository = new Repository();
+        IRepository repository = new JsonRepository();
         Controller controller = new Controller(repository);
         AnnonseController annonseController = new AnnonseController(repository);
 
@@ -35,7 +36,7 @@ public class Application {
         app.get("/api/alle-annonser/:alle-annonser-id", controller::getAnnonser);
 
         app.get("/api/alle-annonser/:alle-annonser-id/annonser",annonseController ::getAnnonser);
-        app.get("/api/alle-annonser/:alle-annonser-id/planets/:annonse-id", annonseController ::getAnnonser);
+        app.get("/api/alle-annonser/:alle-annonser-id/annonser/:annonse-id", annonseController ::getAnnonse);
 
 //        app.get("/api/alleAnnonser/:annonse", controller :: annonse);
 

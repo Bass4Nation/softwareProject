@@ -3,10 +3,11 @@ package hiof.findParking.model;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Alle_Annonser implements Comparable<Alle_Annonser>{
     private String name;
-    private ArrayList<Annonse> annonser = new ArrayList<Annonse>();
+    private List<Annonse> annonser = new ArrayList<Annonse>();
 
     public Alle_Annonser(String name) {
         this.name = name;
@@ -20,7 +21,7 @@ public class Alle_Annonser implements Comparable<Alle_Annonser>{
         return name;
     }
 
-    public ArrayList<Annonse> getAnnonser() {
+    public List<Annonse> getAnnonser() {
         return new ArrayList<Annonse>(annonser);
     }
 

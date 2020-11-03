@@ -2,7 +2,7 @@
   <section >
     <ul>
       <li v-for="annonse in annonser">
-        <a v-if="alle_annonser" :href="`/alle-annonser/${alle_annonser.name}/annonser/${annonse.name}`">
+        <a v-if="alle_annonser" :href="`/alle-annonser/${alle_annonser.name}/annonser/${annonse.id}`">
           <section class="single-annonse-container" >
             {{console.log(annonse.tittel)}}
             {{console.log(annonse.pictureUrl)}}
