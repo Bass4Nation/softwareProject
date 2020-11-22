@@ -19,27 +19,6 @@ public class AnnonseController {
 
         List<Annonse> planets = repository.getAnnonser(planetSystemName);
 
-//        if (sortBy != null) {
-//            switch (sortBy) {
-//                case "name":
-//                    Collections.sort(planets);
-//                    break;
-//                case "mass":
-//                    planets.sort((o1, o2) -> (int) (o1.getMass() - o2.getMass()));
-//                    break;
-//                case "radius":
-//                    planets.sort((o1, o2) -> {
-//                        if (o1.getRadius() < o2.getRadius())
-//                            return -1;
-//                        else if(o1.getRadius() > o2.getRadius())
-//                            return 1;
-//                        return 0;
-//                    });
-//                    break;
-//            }
-//        }
-//  SORT
-
         context.json(planets);
     }
 

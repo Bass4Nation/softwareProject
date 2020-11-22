@@ -19,20 +19,25 @@ public class JsonRepository implements IRepository {
 
 //    public JsonRepository() {
 //        mangeAnnonser();
-//        writeToFile("anngonser.json", allAnnonser);
+//        writeToFile("Annonser.json", allAnnonser);
 //    }
 
 
     private void mangeAnnonser() {
 
         Alle_Annonser obsListe = new Alle_Annonser("Viken");
-//------------------------------------------------------ Annonser ----------------------------
+        Alle_Annonser obsListe2 = new Alle_Annonser("Oslo");
+//------------------------------------------------------ Bruker ----------------------------
         Bruker bruker1 = new Bruker("norman@nisse.no", "Adresse 12B", "10259654", "Ola Nordman");
+        Bruker bruker2 = new Bruker("ola@nisse.no", "Adresse 10C", "99998877", "Nisse Ola");
+//------------------------------------------------------ Annonser ----------------------------
         obsListe.addAnnonse(new Annonse(bruker1.getAdresse(),bruker1.getNavn(),"Dorime noe rart beskrivelse", "En fin plass i Halden", 50, "https://mediadc.brightspotcdn.com/dims4/default/7911b12/2147483647/strip/true/crop/2290x1322+0+0/resize/2290x1322!/quality/90/?url=https%3A%2F%2Fmediadc.brightspotcdn.com%2F62%2F05%2Fbbcbb53c660de0e2576a8de0491d%2Fe023efc13eb249b7634a4046b6fe6800.jpg"));
         obsListe.addAnnonse(new Annonse(bruker1.getAdresse(),bruker1.getNavn(),"Dette er annonse 2 beskrivelse", "Billig plass i Halden", 20, "https://www.goturpin.com/pages/news-and-announcements/image/section-image/parking-8.jpg"));
+        obsListe2.addAnnonse(new Annonse(bruker2.getAdresse(),bruker2.getNavn(),"Dette er annonse 1 i Oslo", "Billig plass i Halden", 20, "https://www.goturpin.com/pages/news-and-announcements/image/section-image/parking-8.jpg"));
 
 
         allAnnonser.add(obsListe);
+        allAnnonser.add(obsListe2);
         //--------------------------------- Observation -----------------------------------------------
 
 

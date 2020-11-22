@@ -2,7 +2,7 @@
   <section >
     <ul>
       <li v-for="annonse in annonser">
-        <a v-if="alle_annonser" :href="`/alle-annonser/${alle_annonser.name}/annonser/${annonse.id}`">
+        <a v-if="sted" :href="`/find-parking/${sted.name}/annonser/${annonse.id}`">
           <section class="single-annonse-container" >
             {{console.log(annonse.tittel)}}
             {{console.log(annonse.pictureUrl)}}
@@ -30,22 +30,22 @@
 Vue.component("alle-annonsene", {
   template: "#annonser",
   data: () => ({
-    alle_annonser: null,
+    sted: null,
     annonser: [],
   }),
   created() {
     const alleAnnonserId = this.$javalin.pathParams["alle-annonser-id"];
 
-    fetch(`/api/alle-annonser/${alleAnnonserId}`)
+    fetch(`/api/find-parking/${alleAnnonserId}`)
         .then(res => res.json())
         .then(res => {
-          this.alle_annonser = res
+          this.sted = res
         })
-        .catch(() => alert("Error while fetching planet system"))
-    fetch(`/api/alle-annonser/${alleAnnonserId}/annonser`)
+        .catch(() => alert("Error while Fylke"))
+    fetch(`/api/find-parking/${alleAnnonserId}/annonser`)
         .then(res => res.json())
         .then(res => this.annonser = res)
-        .catch(() => alert("Error while fetching annonser side 2"));
+        .catch(() => alert("Error while fetching annonsene i Fylket"));
   }
 });
 </script>

@@ -15,11 +15,11 @@ public class Application {
         app.config.enableWebjars();
 
         // ----------------------------Views---------------------------
-        app.before("/", ctx -> ctx.redirect("/alle-annonser/Viken"));
+        app.before("/", ctx -> ctx.redirect("/find-parking"));
 
-        app.get("/alle-annonser", new VueComponent("alle-annonser"));
-        app.get("/alle-annonser/:alle-annonser-id", new VueComponent("alle-annonsene"));
-        app.get("/alle-annonser/:alle-annonser-id/annonser/:annonse-id", new VueComponent("annonse-detaljer"));
+        app.get("/find-parking", new VueComponent("fylker"));
+        app.get("/find-parking/:alle-annonser-id", new VueComponent("alle-annonsene"));
+        app.get("/find-parking/:alle-annonser-id/annonser/:annonse-id", new VueComponent("annonse-detaljer"));
 
 //        app.get("/alleAnnonser/:annonse", new VueComponent("annonse"));
 
@@ -32,15 +32,11 @@ public class Application {
 
         //-----------------------------API -------------------------------
 
-        app.get("/api/alle-annonser", controller :: getAllAnnonser);
-        app.get("/api/alle-annonser/:alle-annonser-id", controller::getAnnonser);
+        app.get("/api/find-parking", controller :: getAllAnnonser);
+        app.get("/api/find-parking/:alle-annonser-id", controller::getAnnonser);
 
-        app.get("/api/alle-annonser/:alle-annonser-id/annonser",annonseController ::getAnnonser);
-        app.get("/api/alle-annonser/:alle-annonser-id/annonser/:annonse-id", annonseController ::getAnnonse);
-
-//        app.get("/api/alleAnnonser/:annonse", controller :: annonse);
-
-
+        app.get("/api/find-parking/:alle-annonser-id/annonser",annonseController ::getAnnonser);
+        app.get("/api/find-parking/:alle-annonser-id/annonser/:annonse-id", annonseController ::getAnnonse);
 
     }
 }

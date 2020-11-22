@@ -41,7 +41,7 @@ Vue.component("annonse-detaljer", {
     console.log("Alle annonser id: " + alleAnnonserId);
     const annonseId = this.$javalin.pathParams["annonse-id"];
     console.log("Annonse id: " + annonseId);
-        fetch(`/api/alle-annonser/${alleAnnonserId}/annonser/${annonseId}`)
+        fetch(`/api/find-parking/${alleAnnonserId}/annonser/${annonseId}`)
 
         .then(res => res.json())
         .then(res => this.annonse = res)
