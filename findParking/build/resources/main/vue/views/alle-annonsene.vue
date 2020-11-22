@@ -12,8 +12,8 @@
               </section>
               <section id="rightBlock">
                  <h2>{{annonse.tittel}}</h2>
-                  <p id="adressefelt">Adresse:</p>
-                  <p id="adress">{{ annonse.adresse }}</p>
+                  <p id="stedfelt">Sted:</p><p id="sted">{{ annonse.sted }}</p>
+                  <p id="adressefelt">Adresse:</p><p id="adress">{{ annonse.adresse }}</p>
                  <p class="infotittel">pris pr time:</p><p id="price"> <p> {{ annonse.pris}}kr/t </p>
               </section>
           </section>
@@ -198,7 +198,17 @@ Vue.component("alle-annonsene", {
       margin-bottom: 2em;
     }
 
+    #sted{
+      display: inline-block;
+      margin-bottom: 2em;
+    }
+
     #adressefelt{
+      display: inline-block;
+      font-weight: 600;
+      margin-right: 1em;
+    }
+    #stedfelt{
       display: inline-block;
       font-weight: 600;
       margin-right: 1em;

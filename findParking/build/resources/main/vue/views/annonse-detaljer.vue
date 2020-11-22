@@ -13,6 +13,8 @@
               <img   v-else class="list-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Icon-round-Question_mark.svg/480px-Icon-round-Question_mark.svg.png">
             </section>
             <section id="rightBlock">
+              <p class="infotittel">Sted:</p>
+              <p id="sted">{{ annonse.sted }}</p>
               <p class="infotittel">Adresse:</p>
               <p id="adress">{{ annonse.adresse }}</p>
               <p class="infotittel">pris pr time:</p><p id="price"> <p> {{ annonse.pris}}kr/t </p>
@@ -194,6 +196,10 @@ Vue.component("annonse-detaljer", {
     }
 
     #adress{
+      display: inline-block;
+      margin-bottom: 2em;
+    }
+    #sted{
       display: inline-block;
       margin-bottom: 2em;
     }

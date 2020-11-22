@@ -13,6 +13,11 @@ public abstract class Lokasjon {
         Addresse = addresse;
     }
 
+    public Lokasjon(String addresse, String sted) {
+        Addresse = addresse;
+        Sted = sted;
+    }
+
     public Lokasjon(int cord) {
         this.cord = cord;
     }

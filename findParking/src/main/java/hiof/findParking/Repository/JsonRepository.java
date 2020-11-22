@@ -31,10 +31,11 @@ public class JsonRepository implements IRepository {
         Bruker bruker1 = new Bruker("norman@nisse.no", "Adresse 12B", "10259654", "Ola Nordman");
         Bruker bruker2 = new Bruker("ola@nisse.no", "Adresse 10C", "99998877", "Nisse Ola");
 //------------------------------------------------------ Annonser ----------------------------
-        obsListe.addAnnonse(new Annonse(bruker1.getAdresse(),bruker1.getNavn(),"Dorime noe rart beskrivelse", "En fin plass i Halden", 50, "https://mediadc.brightspotcdn.com/dims4/default/7911b12/2147483647/strip/true/crop/2290x1322+0+0/resize/2290x1322!/quality/90/?url=https%3A%2F%2Fmediadc.brightspotcdn.com%2F62%2F05%2Fbbcbb53c660de0e2576a8de0491d%2Fe023efc13eb249b7634a4046b6fe6800.jpg"));
-        obsListe.addAnnonse(new Annonse(bruker1.getAdresse(),bruker1.getNavn(),"Dette er annonse 2 beskrivelse", "Billig plass i Halden", 20, "https://www.goturpin.com/pages/news-and-announcements/image/section-image/parking-8.jpg"));
-        obsListe2.addAnnonse(new Annonse(bruker2.getAdresse(),bruker2.getNavn(),"Dette er annonse 1 i Oslo", "Billig plass i Halden", 20, "https://www.goturpin.com/pages/news-and-announcements/image/section-image/parking-8.jpg"));
-
+        obsListe.addAnnonse(new Annonse("Mosseporten 20","Moss",bruker1.getNavn(),"Dorime noe rart beskrivelse", "En fin plass i Halden", 50, "https://mediadc.brightspotcdn.com/dims4/default/7911b12/2147483647/strip/true/crop/2290x1322+0+0/resize/2290x1322!/quality/90/?url=https%3A%2F%2Fmediadc.brightspotcdn.com%2F62%2F05%2Fbbcbb53c660de0e2576a8de0491d%2Fe023efc13eb249b7634a4046b6fe6800.jpg"));
+        obsListe.addAnnonse(new Annonse("Sarpeveien 19","Sarpsborg",bruker1.getNavn(),"Dette er annonse 2 beskrivelse", "Billig plass i Halden", 20, "https://www.goturpin.com/pages/news-and-announcements/image/section-image/parking-8.jpg"));
+        obsListe.addAnnonse(new Annonse("Haldenveien 1374","Rakkestad",bruker2.getNavn(),"Dette er annonse 1 i Oslo", "Billig plass i Halden", 20, "https://www.goturpin.com/pages/news-and-announcements/image/section-image/parking-8.jpg"));
+        obsListe2.addAnnonse(new Annonse("Kongsgate 10","Oslo",bruker2.getNavn(),"Dette er annonse 1 i Oslo", "Billig plass i Halden", 200, "https://www.goturpin.com/pages/news-and-announcements/image/section-image/parking-8.jpg"));
+        obsListe.addAnnonse(new Annonse("Solveien 12C", "Halden", bruker1.getNavn(), "TASIDGHIUASDHIAUOSHDIOUAS", "En annen plass i Halden", 10, "https://cdn.abcotvs.com/dip/images/5896174_013120-kgo-parking-spot-img_Image_00-00-59,06.jpg?w=1600" ));
 
         allAnnonser.add(obsListe);
         allAnnonser.add(obsListe2);

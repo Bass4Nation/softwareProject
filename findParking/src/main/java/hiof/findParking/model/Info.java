@@ -8,6 +8,10 @@ public abstract class Info extends Bruker {
         this.beskrivelse = beskrivelse;
     }
 
+    public Info(String adresse, String sted, String navn, String beskrivelse) {
+        super(adresse, sted, navn);
+        this.beskrivelse = beskrivelse;
+    }
 
     public Info(){}
 

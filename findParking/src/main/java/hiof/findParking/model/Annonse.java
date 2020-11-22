@@ -39,6 +39,14 @@ public class Annonse extends Info{
         this.id = teller++;
     }
 
+    public Annonse(String adresse, String sted, String navn, String beskrivelse, String name, int pris, String pictureUrl) {
+        super(adresse, sted, navn, beskrivelse);
+        this.name = name;
+        this.pris = pris;
+        this.pictureUrl = pictureUrl;
+        this.id = teller++;
+    }
+
     public Annonse(){}
 
     public String getTittel() {
