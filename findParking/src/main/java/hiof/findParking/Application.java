@@ -21,11 +21,9 @@ public class Application {
         app.get("/find-parking/:alle-annonser-id", new VueComponent("alle-annonsene"));
         app.get("/find-parking/:alle-annonser-id/annonser/:annonse-id", new VueComponent("annonse-detaljer"));
 
-//        app.get("/alleAnnonser/:annonse", new VueComponent("annonse"));
 
 
 
-//        IRepository repository = new Repository();
         IRepository repository = new JsonRepository();
         Controller controller = new Controller(repository);
         AnnonseController annonseController = new AnnonseController(repository);
