@@ -1,5 +1,6 @@
 [ {
   "name" : "Viken",
+  "pictureUrl" : "https://itstud.hiof.no/~kristoss/secondYear/finnParking/views/media/viken.jpg",
   "annonser" : [ {
     "telefonnummer" : null,
     "navn" : "Ola Nordman",
@@ -11,8 +12,8 @@
     "id" : 0,
     "tittel" : "En fin plass i Halden",
     "sted" : "Moss",
-    "epost" : null,
-    "adresse" : "Mosseporten 20"
+    "adresse" : "Mosseporten 20",
+    "epost" : null
   }, {
     "telefonnummer" : null,
     "navn" : "Ola Nordman",
@@ -24,8 +25,8 @@
     "id" : 1,
     "tittel" : "Billig plass i Halden",
     "sted" : "Sarpsborg",
-    "epost" : null,
-    "adresse" : "Sarpeveien 19"
+    "adresse" : "Sarpeveien 19",
+    "epost" : null
   }, {
     "telefonnummer" : null,
     "navn" : "Nisse Ola",
@@ -37,8 +38,8 @@
     "id" : 2,
     "tittel" : "Billig plass i Halden",
     "sted" : "Rakkestad",
-    "epost" : null,
-    "adresse" : "Haldenveien 1374"
+    "adresse" : "Haldenveien 1374",
+    "epost" : null
   }, {
     "telefonnummer" : null,
     "navn" : "Ola Nordman",
@@ -50,11 +51,12 @@
     "id" : 4,
     "tittel" : "En annen plass i Halden",
     "sted" : "Halden",
-    "epost" : null,
-    "adresse" : "Solveien 12C"
+    "adresse" : "Solveien 12C",
+    "epost" : null
   } ]
 }, {
   "name" : "Oslo",
+  "pictureUrl" : "https://itstud.hiof.no/~kristoss/secondYear/finnParking/views/media/oslo.jpg",
   "annonser" : [ {
     "telefonnummer" : null,
     "navn" : "Nisse Ola",
@@ -66,7 +68,7 @@
     "id" : 3,
     "tittel" : "Billig plass i Halden",
     "sted" : "Oslo",
-    "epost" : null,
-    "adresse" : "Kongsgate 10"
+    "adresse" : "Kongsgate 10",
+    "epost" : null
   } ]
 } ]

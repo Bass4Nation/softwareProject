@@ -1,4 +1,4 @@
-package hiof.findParking.repository;
+package hiof.findParking.Repository;
 
 
 //import no.hiof.kristoss.oblig6.model.Animal;

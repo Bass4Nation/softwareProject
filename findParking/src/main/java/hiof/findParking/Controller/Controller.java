@@ -1,8 +1,8 @@
-package hiof.findParking.controller;
+package hiof.findParking.Controller;
 
 
 import io.javalin.http.Context;
-import hiof.findParking.repository.IRepository;
+import hiof.findParking.Repository.IRepository;
 
 
 public class Controller {

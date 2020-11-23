@@ -1,7 +1,7 @@
-package hiof.findParking.controller;
+package hiof.findParking.Controller;
 
 import hiof.findParking.model.Annonse;
-import hiof.findParking.repository.IRepository;
+import hiof.findParking.Repository.IRepository;
 import io.javalin.http.Context;
 
 import java.util.List;

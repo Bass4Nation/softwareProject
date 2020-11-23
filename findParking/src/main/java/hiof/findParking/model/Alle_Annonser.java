@@ -6,11 +6,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Alle_Annonser implements Comparable<Alle_Annonser>{
-    private String name;
+    private String name, pictureUrl;
     private List<Annonse> annonser = new ArrayList<Annonse>();
 
     public Alle_Annonser(String name) {
         this.name = name;
+    }
+
+    public Alle_Annonser(String name, String pictureUrl) {
+        this.name = name;
+        this.pictureUrl = pictureUrl;
     }
 
     public Alle_Annonser(){}
@@ -35,6 +40,13 @@ public class Alle_Annonser implements Comparable<Alle_Annonser>{
         return null;
     }
 
+    public String getPictureUrl() {
+        return pictureUrl;
+    }
+
+    public void setPictureUrl(String pictureUrl) {
+        this.pictureUrl = pictureUrl;
+    }
 
     public void setName(String name) {
         this.name = name;

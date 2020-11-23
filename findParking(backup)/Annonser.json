@@ -1,0 +1,74 @@
+[ {
+  "name" : "Viken",
+  "pictureUrl" : "https://bildebank.ostfoldfk.no/fotoweb/cache/5042/indekserte%20bilder/FotoWeb%20Upload/Viken%20fylkesv%C3%A5pen%20skjerm%20bl%C3%A5%20RGB.t5dfb7cf0.m2400.eps.pv.xVpFUNDGO.jpg",
+  "annonser" : [ {
+    "telefonnummer" : null,
+    "navn" : "Ola Nordman",
+    "beskrivelse" : "Dorime noe rart beskrivelse",
+    "kommentarer" : null,
+    "antallPlasser" : 0,
+    "pris" : 50,
+    "pictureUrl" : "https://mediadc.brightspotcdn.com/dims4/default/7911b12/2147483647/strip/true/crop/2290x1322+0+0/resize/2290x1322!/quality/90/?url=https%3A%2F%2Fmediadc.brightspotcdn.com%2F62%2F05%2Fbbcbb53c660de0e2576a8de0491d%2Fe023efc13eb249b7634a4046b6fe6800.jpg",
+    "id" : 0,
+    "tittel" : "En fin plass i Halden",
+    "sted" : "Moss",
+    "epost" : null,
+    "adresse" : "Mosseporten 20"
+  }, {
+    "telefonnummer" : null,
+    "navn" : "Ola Nordman",
+    "beskrivelse" : "Dette er annonse 2 beskrivelse",
+    "kommentarer" : null,
+    "antallPlasser" : 0,
+    "pris" : 20,
+    "pictureUrl" : "https://www.goturpin.com/pages/news-and-announcements/image/section-image/parking-8.jpg",
+    "id" : 1,
+    "tittel" : "Billig plass i Halden",
+    "sted" : "Sarpsborg",
+    "epost" : null,
+    "adresse" : "Sarpeveien 19"
+  }, {
+    "telefonnummer" : null,
+    "navn" : "Nisse Ola",
+    "beskrivelse" : "Dette er annonse 1 i Oslo",
+    "kommentarer" : null,
+    "antallPlasser" : 0,
+    "pris" : 20,
+    "pictureUrl" : "https://www.goturpin.com/pages/news-and-announcements/image/section-image/parking-8.jpg",
+    "id" : 2,
+    "tittel" : "Billig plass i Halden",
+    "sted" : "Rakkestad",
+    "epost" : null,
+    "adresse" : "Haldenveien 1374"
+  }, {
+    "telefonnummer" : null,
+    "navn" : "Ola Nordman",
+    "beskrivelse" : "TASIDGHIUASDHIAUOSHDIOUAS",
+    "kommentarer" : null,
+    "antallPlasser" : 0,
+    "pris" : 10,
+    "pictureUrl" : "https://cdn.abcotvs.com/dip/images/5896174_013120-kgo-parking-spot-img_Image_00-00-59,06.jpg?w=1600",
+    "id" : 4,
+    "tittel" : "En annen plass i Halden",
+    "sted" : "Halden",
+    "epost" : null,
+    "adresse" : "Solveien 12C"
+  } ]
+}, {
+  "name" : "Oslo",
+  "pictureUrl" : "https://premium.vgc.no/v2/images/bb34f9d5-b48d-416c-ba61-52e4c4b14592?fit=crop&h=700&w=1309&s=bdcb413208edcc613bbb3160b25bd3d5afddd15b",
+  "annonser" : [ {
+    "telefonnummer" : null,
+    "navn" : "Nisse Ola",
+    "beskrivelse" : "Dette er annonse 1 i Oslo",
+    "kommentarer" : null,
+    "antallPlasser" : 0,
+    "pris" : 200,
+    "pictureUrl" : "https://www.goturpin.com/pages/news-and-announcements/image/section-image/parking-8.jpg",
+    "id" : 3,
+    "tittel" : "Billig plass i Halden",
+    "sted" : "Oslo",
+    "epost" : null,
+    "adresse" : "Kongsgate 10"
+  } ]
+} ]
