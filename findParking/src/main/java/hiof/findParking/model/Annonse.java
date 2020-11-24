@@ -1,5 +1,7 @@
 package hiof.findParking.model;
 
+import java.util.Comparator;
+
 public class Annonse extends Info{
     private String name, kommentarer;
     private int antallPlasser;
@@ -48,6 +50,14 @@ public class Annonse extends Info{
     }
 
     public Annonse(){}
+
+    public static Comparator<Annonse> alphabetical = new Comparator<Annonse>(){
+        @Override
+        public int compare(Annonse oneAnnonse, Annonse twoAnnonse){
+            return (oneAnnonse.getNavn().compareTo(twoAnnonse.getNavn()));
+        }
+    };
+
 
     public String getTittel() {
         return name;

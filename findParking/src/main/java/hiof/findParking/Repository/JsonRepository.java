@@ -148,6 +148,9 @@ private List<Bruker> allBrukere = new ArrayList<>();
         return allBrukere;
     }
 
+
+
+
     @Override
     public Alle_Annonser getAnnonserFylke(String locName) {
         for (Alle_Annonser test : allAnnonser)
@@ -158,11 +161,28 @@ private List<Bruker> allBrukere = new ArrayList<>();
         return null;
     }
 
-    @Override
-    public Alle_Annonser getAlleAnnonse(String AlleAnnonseName) {
-        return null;
-    }
+//    @Override
+//    public Alle_Annonser getAlleAnnonse(String AlleAnnonseName) {
+//        return null;
+//    }
 
+
+    public List<Annonse> getAlleAnnonse(String AlleAnnonseName, String sortBy) {
+        List<Annonse> annonser = getAnnonserFylke(AlleAnnonseName).getAnnonser();
+//        public ArrayList<Planet> getAllPlanets(String systemName, String sortBy) {
+//            ArrayList<Planet> planets = getAnnonser() getPlanetSystem(systemName).getPlanets();
+
+
+        switch (sortBy) {
+
+
+            case "name":
+                Collections.sort(annonser, Annonse.alphabetical);
+                break;
+        }
+
+        return getAnnonserFylke(AlleAnnonseName).getAnnonser();
+    }
 
     @Override
     public Annonse getAnnonse(String AlleAnnonseName, String annonseId) {

@@ -57,6 +57,8 @@ Vue.component("fylker", {
     text-decoration: none;
     padding-bottom: 3em;
   }
+
+
   .single-annonse-container{
     overflow: hidden;
     color: white;
@@ -128,6 +130,17 @@ Vue.component("fylker", {
     float: left;
     overflow: hidden;
   }
+  #bildeBlock {
+    padding: 15px;
+    width: 38em;
+    height: 30em;
+    float: left;
+    overflow: hidden;
+  }
+
+  #bildeBlock img{
+  max-width: 26em;
+  }
 
   #rightBlock {
     padding: 15px;
@@ -144,12 +157,12 @@ Vue.component("fylker", {
   }
 
   #buttonBlock {
+    text-align: center;
     width: 35em;
     min-height: 3em;
     float: right;
     clear: right;
     margin: 20px;
-    text-align: left;
     margin-bottom: 5em;
   }
   .btn {
@@ -161,7 +174,7 @@ Vue.component("fylker", {
     border: solid #d4ffbf 3px;
     cursor: pointer;
     margin-right: 3em;
-    width: 10em;
+    width: 14em;
     -webkit-box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.35);
     -moz-box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.35);
     box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.35);

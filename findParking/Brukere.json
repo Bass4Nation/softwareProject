@@ -4,8 +4,8 @@
   "passord" : "findparking",
   "annonserId" : [ 0, 2, 4 ],
   "annonser" : [ ],
-  "sted" : null,
   "epost" : "find@parking.no",
+  "sted" : null,
   "adresse" : "Adresse 12B"
 }, {
   "telefonnummer" : "99998877",
@@ -13,7 +13,7 @@
   "passord" : "admin",
   "annonserId" : [ 1, 3 ],
   "annonser" : [ ],
-  "sted" : null,
   "epost" : "admin",
+  "sted" : null,
   "adresse" : "Adresse 10C"
 } ]

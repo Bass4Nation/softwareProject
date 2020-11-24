@@ -1,22 +1,14 @@
 <template id="annonser">
-  <section>
-
-    <section id="stedVelger">
-      <label for="steder">Velg et sted for parkeringsplasser:</label>
-      <select  id="steder">
-        <option  v-for="annonse in annonser" v-if="annonse" :value="`${annonse.sted}`">{{ annonse.sted }}</option>
-      </select>
-    </section>
-
+  <section >
     <ul>
       <li v-for="annonse in annonser">
-
         <a v-if="alle_annonser" :href="`/find-parking/${alle_annonser.name}/annonser/${annonse.id}`">
           <section class="single-annonse-container" >
-<!--            {{console.log(annonse.tittel)}}-->
-            {{console.log(annonse.sted)}}
+            {{console.log(annonse.tittel)}}
+            {{console.log(annonse.pictureUrl)}}
               <section id="leftBlock">
                 <img   v-if="annonse.pictureUrl" class="list-image" v-bind:src="annonse.pictureUrl">
+                <img   v-else class="list-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Icon-round-Question_mark.svg/480px-Icon-round-Question_mark.svg.png">
               </section>
               <section id="rightBlock">
                  <h2>{{annonse.tittel}}</h2>

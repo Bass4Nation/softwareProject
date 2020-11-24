@@ -14,8 +14,8 @@
     "pictureUrl" : "https://mediadc.brightspotcdn.com/dims4/default/7911b12/2147483647/strip/true/crop/2290x1322+0+0/resize/2290x1322!/quality/90/?url=https%3A%2F%2Fmediadc.brightspotcdn.com%2F62%2F05%2Fbbcbb53c660de0e2576a8de0491d%2Fe023efc13eb249b7634a4046b6fe6800.jpg",
     "id" : 0,
     "tittel" : "En fin plass i Moss",
-    "sted" : "Moss",
     "epost" : null,
+    "sted" : "Moss",
     "adresse" : "Mosseporten 20"
   }, {
     "telefonnummer" : null,
@@ -30,8 +30,8 @@
     "pictureUrl" : "https://www.goturpin.com/pages/news-and-announcements/image/section-image/parking-8.jpg",
     "id" : 1,
     "tittel" : "Billig plass i Sarpsborg",
-    "sted" : "Sarpsborg",
     "epost" : null,
+    "sted" : "Sarpsborg",
     "adresse" : "Sarpeveien 19"
   }, {
     "telefonnummer" : null,
@@ -46,8 +46,8 @@
     "pictureUrl" : "https://www.goturpin.com/pages/news-and-announcements/image/section-image/parking-8.jpg",
     "id" : 2,
     "tittel" : "Billig plass i Rakkestad",
-    "sted" : "Rakkestad",
     "epost" : null,
+    "sted" : "Rakkestad",
     "adresse" : "Haldenveien 1374"
   }, {
     "telefonnummer" : null,
@@ -62,8 +62,8 @@
     "pictureUrl" : "https://cdn.abcotvs.com/dip/images/5896174_013120-kgo-parking-spot-img_Image_00-00-59,06.jpg?w=1600",
     "id" : 3,
     "tittel" : "En annen plass i Halden",
-    "sted" : "Halden",
     "epost" : null,
+    "sted" : "Halden",
     "adresse" : "Solveien 12C"
   } ]
 }, {
@@ -82,8 +82,8 @@
     "pictureUrl" : "https://www.goturpin.com/pages/news-and-announcements/image/section-image/parking-8.jpg",
     "id" : 4,
     "tittel" : "Billig plass i Oslo",
-    "sted" : "Oslo",
     "epost" : null,
+    "sted" : "Oslo",
     "adresse" : "Kongsgate 10"
   } ]
 } ]
