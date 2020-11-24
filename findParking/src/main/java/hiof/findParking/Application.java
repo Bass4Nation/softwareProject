@@ -18,6 +18,8 @@ public class Application {
         app.before("/", ctx -> ctx.redirect("/find-parking"));
 
         app.get("/find-parking", new VueComponent("fylker"));
+        app.get("/find-parking/minSide/:bruker-id", new VueComponent("bruker"));
+        app.get("/find-parking/minSide/:bruker-id/annonser", new VueComponent("bruker-annonser"));
         app.get("/find-parking/:alle-annonser-id", new VueComponent("alle-annonsene"));
         app.get("/find-parking/:alle-annonser-id/annonser/:annonse-id", new VueComponent("annonse-detaljer"));
 
@@ -31,7 +33,9 @@ public class Application {
         //-----------------------------API -------------------------------
 
         app.get("/api/find-parking", controller :: getAllAnnonser);
-        app.get("/api/find-parking/bruker", controller::getAllBrukere);
+        app.get("/api/find-parking/login", controller::getAllBrukere);
+        app.get("/api/find-parking/minSide/:bruker-id", controller::getEnBrukere);
+        app.get("/api/find-parking/minSide/:bruker-id/annonser", controller::getBrukerAnnonser);
         app.get("/api/find-parking/:alle-annonser-id", controller::getAnnonser);
 
         app.get("/api/find-parking/:alle-annonser-id/annonser",annonseController ::getAnnonser);

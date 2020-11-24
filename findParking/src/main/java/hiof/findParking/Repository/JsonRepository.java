@@ -15,16 +15,16 @@ import java.util.Collections;
 import java.util.List;
 
 public class JsonRepository implements IRepository {
-//    public List<Alle_Annonser> allAnnonser = fileReader("Annonser.json");
-//    public List<Alle_Annonser> allBrukere = fileReaderUser("Brukere.json");
-private List<Alle_Annonser> allAnnonser = new ArrayList<>();
-private List<Bruker> allBrukere = new ArrayList<>();
+    public List<Alle_Annonser> allAnnonser = fileReader("Annonser.json");
+    public List<Bruker> allBrukere = fileReaderUser("Brukere.json");
+//private List<Alle_Annonser> allAnnonser = new ArrayList<>();
+//private List<Bruker> allBrukere = new ArrayList<>();
 
-    public JsonRepository() {
-        mangeAnnonser();
-        writeToFile("Annonser.json", allAnnonser);
-        writeToFileUser("Brukere.json", allBrukere);
-    }
+//    public JsonRepository() {
+//        mangeAnnonser();
+//        writeToFile("Annonser.json", allAnnonser);
+//        writeToFileUser("Brukere.json", allBrukere);
+//    }
 
 
     private void mangeAnnonser() {
@@ -56,23 +56,26 @@ private List<Bruker> allBrukere = new ArrayList<>();
 
     }
 
-    public List<Bruker> addAnnonserToUser(List<Bruker> user, List<Alle_Annonser> annonsers){
-        for (Alle_Annonser alleAnnonser : annonsers){
-            for (Annonse annonse : alleAnnonser.getAnnonser()){
-                for(Bruker bruker : user){
-                    for(int userId = 0; userId < bruker.getAnnonserId().length; userId++){
-                            int[] test = bruker.getAnnonserId();
-                            if (test[userId] == annonse.getId()){
-                                if ((annonse.getId() == test[userId])){
-                                System.out.println(bruker.getNavn() + " id " +test[userId] +" og " +annonse.getTittel());
+    public List<Bruker> addAnnonserToUser(List<Bruker> user, List<Alle_Annonser> alleAnnonser){
+        List<Annonse> annonseLister = new ArrayList<>();
+        for (Alle_Annonser alle_annonser : alleAnnonser){
+            annonseLister.addAll(alle_annonser.getAnnonser());
+        }
 
-
-                                }
-                            }
-                        }
-                    }
+        for(int j = 0; j < user.size(); j++){
+            Bruker bruker = user.get(j);
+            for(int i = 0; i < bruker.getAnnonserId().length; i++){
+                System.out.println(bruker.getAnnonserId()[i]);
+                for(int k = 0; k < annonseLister.size(); k++){
+                   if (bruker.getAnnonserId()[i] == annonseLister.get(k).getId()){
+                       bruker.addAnnonse(annonseLister.get(k));
+                   }
                 }
             }
+        }
+
+
+        System.out.println(user);
         return null;
     }
 
@@ -148,6 +151,22 @@ private List<Bruker> allBrukere = new ArrayList<>();
         return allBrukere;
     }
 
+
+@Override
+    public Bruker getEnBrukere(String navn) {
+
+        for (Bruker bruker : getAlleBrukere()){
+//            Må endre her om den skal sjekke etter noe annet på en singel annonse
+            if ((bruker.getNavn().equals(navn))){
+                return bruker;
+            }
+        }
+        return null;
+    }
+@Override
+    public List<Annonse> getBrukerAnnonser(String navn) {
+        return getEnBrukere(navn).getAnnonser();
+    }
 
 
 

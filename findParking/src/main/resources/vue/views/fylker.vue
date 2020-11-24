@@ -307,4 +307,116 @@ Vue.component("fylker", {
     justify-content: space-between;
   }
 
+  #stedsorter{
+    display: flex;
+    color: white;
+    text-align: center;
+    margin: auto;
+    width: 30em;
+    margin-bottom: 5em;
+    background-color: #2e2e2e;
+    border-radius: 5px;
+    border: solid 1px #404040;
+    padding: 1.5em;
+    -webkit-box-shadow: 0px 0px 33px -3px rgba(0, 0, 0, 0.48);
+    -moz-box-shadow: 0px 0px 33px -3px rgba(0, 0, 0, 0.48);
+    box-shadow: 0px 0px 33px -3px rgba(0, 0, 0, 0.48);
+  }
+
+  #steder{
+    font-family: Ubuntu !important;
+    font-weight: bold;
+    background-color: #1b1b1b;
+    padding: 10px;
+    color: white;
+    border: solid #d4ffbf 3px;
+    cursor: pointer;
+    width: 17em;
+  }
+
+  #valg{
+    padding: 1.5em!important;
+    margin-bottom: 2em;
+  }
+
+  .btn2 {
+    font-family: Ubuntu !important;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #1b1b1b;
+    padding: 10px;
+    color: white;
+    border: solid #d4ffbf 3px;
+    cursor: pointer;
+    margin-right: 2em;
+    width: 7em;
+    -webkit-box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.35);
+  }
+  .btn2:hover {
+    transition: .5s;
+    background-color: #d4ffbf;
+    padding: 10px;
+    color: #1b1b1b;
+    border: solid #d4ffbf 3px;
+  }
+
+  .btn3 {
+    font-family: Ubuntu !important;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #1b1b1b;
+    padding: 10px;
+    color: white;
+    border: solid #d4ffbf 3px;
+    cursor: pointer;
+    margin-right: 2em;
+    margin-left: 2em;
+    width: 7em;
+    -webkit-box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.35);
+  }
+  .btn3:hover {
+    transition: .5s;
+    background-color: #d4ffbf;
+    padding: 10px;
+    color: #1b1b1b;
+    border: solid #d4ffbf 3px;
+  }
+
+  .beskrivelsebox{
+    background-color: #1b1b1b;
+    padding: 10px;
+    color: white;
+    border: solid #d4ffbf 3px;
+    width: 37em;
+    max-width: 1050px;
+    -webkit-box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.35);
+    margin-bottom: 3em;
+  }
+
+  #input{
+    text-align: center;
+  }
+  .textbox{
+    background-color: #1b1b1b;
+    padding: 10px;
+    color: white;
+    border: solid #d4ffbf 3px;
+    width: 37em;
+    -webkit-box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.35);
+    margin-bottom: 3em;
+  }
+  .miniinfo{
+    color: #c2c2c2;
+    font-style: italic;
+    font-size: .7em;
+    margin: .3em;
+  }
 </style>

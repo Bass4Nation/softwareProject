@@ -1,5 +1,17 @@
 <template id="annonser">
-  <section >
+
+  <section>
+
+    <section id="stedsorter">
+      <a class="btn2" href="javascript:history.back()">tilbake</a>
+      <a class="btn2" href="javascript:history.back()">Reset</a>
+      <section id="stedVelger">
+        <select  id="steder">
+          <option id="valg" v-for="annonse in annonser" v-if="annonse" :value="`${annonse.sted}`">{{ annonse.sted }}</option>
+        </select>
+      </section>
+    </section>
+
     <ul>
       <li v-for="annonse in annonser">
         <a v-if="alle_annonser" :href="`/find-parking/${alle_annonser.name}/annonser/${annonse.id}`">
@@ -39,11 +51,11 @@ Vue.component("alle-annonsene", {
         .then(res => {
           this.alle_annonser = res
         })
-        .catch(() => alert("Error while fetching planet system"))
+        .catch(() => alert("Error while fetching alle annonser for dette fylket"))
     fetch(`/api/find-parking/${alleAnnonserId}/annonser`)
         .then(res => res.json())
         .then(res => this.annonser = res)
-        .catch(() => alert("Error while fetching annonser side 2"));
+        .catch(() => alert("Error while fetching annonser detaljer"));
   }
 });
 </script>

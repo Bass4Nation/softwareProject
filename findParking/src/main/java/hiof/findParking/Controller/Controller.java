@@ -21,6 +21,15 @@ public class Controller {
         context.json(repository.getAlleBrukere());
     }
 
+
+    public void getEnBrukere(Context context) {
+        String bruker = context.pathParam("bruker-id");
+        context.json(repository.getEnBrukere(bruker));
+    }
+    public void getBrukerAnnonser(Context context) {
+        String bruker = context.pathParam("bruker-id");
+        context.json(repository.getBrukerAnnonser(bruker));
+    }
     public void getAnnonser(Context context) {
         String fylke = context.pathParam("alle-annonser-id");
         context.json(repository.getAnnonserFylke(fylke));

@@ -55,7 +55,13 @@ public class Bruker extends KontaktInfo {
     }
 
     public void addAnnonse(Annonse annonse) {
-        annonser.add(annonse);
+        for (var i = 0; i < annonserId.length; i++){
+            int j =  annonserId[i];
+            if(annonse.getId() == j){
+//                System.out.println(annonse);
+                annonser.add(annonse);
+            }
+        }
     }
 
 
@@ -82,4 +88,11 @@ public class Bruker extends KontaktInfo {
     public void setNavn(String navn) {
         this.navn = navn;
     }
+
+    @Override
+    public String toString() {
+        return String.format("Denne brukeren heter %s og har %d annonser på denne siden\n",navn, annonser.size());
+    }
+
+
 }
