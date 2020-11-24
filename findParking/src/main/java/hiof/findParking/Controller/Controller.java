@@ -1,8 +1,8 @@
-package hiof.findParking.controller;
+package hiof.findParking.Controller;
 
 
 import io.javalin.http.Context;
-import hiof.findParking.repository.IRepository;
+import hiof.findParking.Repository.IRepository;
 
 
 public class Controller {
@@ -17,25 +17,16 @@ public class Controller {
         context.json(repository.getAlleAnnonser());
     }
 
+    public void getAllBrukere(Context context) {
+        context.json(repository.getAlleBrukere());
+    }
+
     public void getAnnonser(Context context) {
         String fylke = context.pathParam("alle-annonser-id");
         context.json(repository.getAnnonserFylke(fylke));
     }
 
 
-
-
-
-//    public void alleAnnonser(Context context){
-//        context.json(repository.getAllInfo());
-//    }
-
-//    public void annonse(Context context){
-//        String stedId = context.pathParam(":sted-id");
-//        context.json(repository.getInfo(stedId));
-//
-//
-//    }
 
 
 }

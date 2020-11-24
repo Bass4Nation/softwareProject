@@ -1,4 +1,4 @@
-package hiof.findParking.repository;
+package hiof.findParking.Repository;
 
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
@@ -11,33 +11,70 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class JsonRepository implements IRepository {
-    public List<Alle_Annonser> allAnnonser = fileReader("Annonser.json");
-//private List<Alle_Annonser> allAnnonser = new ArrayList<>();
+//    public List<Alle_Annonser> allAnnonser = fileReader("Annonser.json");
+//    public List<Alle_Annonser> allBrukere = fileReaderUser("Brukere.json");
+private List<Alle_Annonser> allAnnonser = new ArrayList<>();
+private List<Bruker> allBrukere = new ArrayList<>();
 
-//    public JsonRepository() {
-//        mangeAnnonser();
-//        writeToFile("anngonser.json", allAnnonser);
-//    }
+    public JsonRepository() {
+        mangeAnnonser();
+        writeToFile("Annonser.json", allAnnonser);
+        writeToFileUser("Brukere.json", allBrukere);
+    }
 
 
     private void mangeAnnonser() {
 
-        Alle_Annonser obsListe = new Alle_Annonser("Viken");
-//------------------------------------------------------ Annonser ----------------------------
-        Bruker bruker1 = new Bruker("norman@nisse.no", "Adresse 12B", "10259654", "Ola Nordman");
-        obsListe.addAnnonse(new Annonse(bruker1.getAdresse(),bruker1.getNavn(),"Dorime noe rart beskrivelse", "En fin plass i Halden", 50, "https://mediadc.brightspotcdn.com/dims4/default/7911b12/2147483647/strip/true/crop/2290x1322+0+0/resize/2290x1322!/quality/90/?url=https%3A%2F%2Fmediadc.brightspotcdn.com%2F62%2F05%2Fbbcbb53c660de0e2576a8de0491d%2Fe023efc13eb249b7634a4046b6fe6800.jpg"));
-        obsListe.addAnnonse(new Annonse(bruker1.getAdresse(),bruker1.getNavn(),"Dette er annonse 2 beskrivelse", "Billig plass i Halden", 20, "https://www.goturpin.com/pages/news-and-announcements/image/section-image/parking-8.jpg"));
+        Alle_Annonser viken = new Alle_Annonser("Viken","https://itstud.hiof.no/~kristoss/secondYear/finnParking/views/media/viken.jpg");
+        Alle_Annonser oslo = new Alle_Annonser("Oslo","https://itstud.hiof.no/~kristoss/secondYear/finnParking/views/media/oslo.jpg");
+        int[] id ={0,2,4};
+        int[] emptyId ={1,3};
+        List<Annonse> annonser = new ArrayList<>();
+//------------------------------------------------------ Bruker ----------------------------
+        Bruker bruker1 = new Bruker("find@parking.no","findparking", "Ola Nordman", "Adresse 12B", "123456789", id, annonser);
+        Bruker bruker2 = new Bruker("admin", "admin","Admin", "Adresse 10C", "99998877", emptyId, annonser);
+//-------------------------------------------------------- Annonser ----------------------------
+        viken.addAnnonse(new Annonse("Mosseporten 20","Moss",bruker1.getNavn(),"Dorime noe rart beskrivelse", "En fin plass i Moss", 50, "https://mediadc.brightspotcdn.com/dims4/default/7911b12/2147483647/strip/true/crop/2290x1322+0+0/resize/2290x1322!/quality/90/?url=https%3A%2F%2Fmediadc.brightspotcdn.com%2F62%2F05%2Fbbcbb53c660de0e2576a8de0491d%2Fe023efc13eb249b7634a4046b6fe6800.jpg"));
+        viken.addAnnonse(new Annonse("Sarpeveien 19","Sarpsborg",bruker1.getNavn(),"Dette er annonse 2 beskrivelse", "Billig plass i Sarpsborg", 20, "https://www.goturpin.com/pages/news-and-announcements/image/section-image/parking-8.jpg"));
+        viken.addAnnonse(new Annonse("Haldenveien 1374","Rakkestad",bruker2.getNavn(),"Dette er annonse 1 i Oslo", "Billig plass i Rakkestad", 20, "https://www.goturpin.com/pages/news-and-announcements/image/section-image/parking-8.jpg"));
+        viken.addAnnonse(new Annonse("Solveien 12C", "Halden", bruker1.getNavn(), "TASIDGHIUASDHIAUOSHDIOUAS", "En annen plass i Halden", 10, "https://cdn.abcotvs.com/dip/images/5896174_013120-kgo-parking-spot-img_Image_00-00-59,06.jpg?w=1600" ));
+
+        oslo.addAnnonse(new Annonse("Kongsgate 10","Oslo",bruker2.getNavn(),"Dette er annonse 1 i Oslo", "Billig plass i Oslo", 200, "https://www.goturpin.com/pages/news-and-announcements/image/section-image/parking-8.jpg"));
 
 
-        allAnnonser.add(obsListe);
-        //--------------------------------- Observation -----------------------------------------------
+        allAnnonser.add(viken);
+        allAnnonser.add(oslo);
+
+        allBrukere.add(bruker1);
+        allBrukere.add(bruker2);
+        addAnnonserToUser(allBrukere, allAnnonser);
 
 
     }
 
+    public List<Bruker> addAnnonserToUser(List<Bruker> user, List<Alle_Annonser> annonsers){
+        for (Alle_Annonser alleAnnonser : annonsers){
+            for (Annonse annonse : alleAnnonser.getAnnonser()){
+                for(Bruker bruker : user){
+                    for(int userId = 0; userId < bruker.getAnnonserId().length; userId++){
+                            int[] test = bruker.getAnnonserId();
+                            if (test[userId] == annonse.getId()){
+                                if ((annonse.getId() == test[userId])){
+                                System.out.println(bruker.getNavn() + " id " +test[userId] +" og " +annonse.getTittel());
+
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        return null;
+    }
 
     public List<Alle_Annonser> fileReader(String fileGet) {
         List<Alle_Annonser> readAnnonser = new ArrayList<>();
@@ -46,6 +83,24 @@ public class JsonRepository implements IRepository {
             ObjectMapper objectMapper = new ObjectMapper();
 
             Alle_Annonser[] annonseArray = objectMapper.readValue(new File(fileGet), Alle_Annonser[].class);
+
+            readAnnonser = Arrays.asList(annonseArray);
+        } catch (JsonParseException | JsonMappingException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        System.out.println(readAnnonser);
+        return readAnnonser;
+    }
+
+    public List<Bruker> fileReaderUser(String fileGet) {
+        List<Bruker> readAnnonser = new ArrayList<>();
+
+        try {
+            ObjectMapper objectMapper = new ObjectMapper();
+
+            Bruker[] annonseArray = objectMapper.readValue(new File(fileGet), Bruker[].class);
 
             readAnnonser = Arrays.asList(annonseArray);
         } catch (JsonParseException | JsonMappingException e) {
@@ -70,10 +125,31 @@ public class JsonRepository implements IRepository {
         return file;
     }
 
+    public static File writeToFileUser(String filename, List<Bruker> alle_annonser) {
+        File file = new File(filename);
+        ObjectMapper objectMapper = new ObjectMapper();
+
+        try {
+
+            objectMapper.writerWithDefaultPrettyPrinter().writeValue(file, alle_annonser);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return file;
+    }
+
 
     public List<Alle_Annonser> getAlleAnnonser() {
         return allAnnonser;
     }
+
+
+    public List<Bruker> getAlleBrukere() {
+        return allBrukere;
+    }
+
+
+
 
     @Override
     public Alle_Annonser getAnnonserFylke(String locName) {
@@ -85,11 +161,28 @@ public class JsonRepository implements IRepository {
         return null;
     }
 
-    @Override
-    public Alle_Annonser getAlleAnnonse(String AlleAnnonseName) {
-        return null;
-    }
+//    @Override
+//    public Alle_Annonser getAlleAnnonse(String AlleAnnonseName) {
+//        return null;
+//    }
 
+
+    public List<Annonse> getAlleAnnonse(String AlleAnnonseName, String sortBy) {
+        List<Annonse> annonser = getAnnonserFylke(AlleAnnonseName).getAnnonser();
+//        public ArrayList<Planet> getAllPlanets(String systemName, String sortBy) {
+//            ArrayList<Planet> planets = getAnnonser() getPlanetSystem(systemName).getPlanets();
+
+
+        switch (sortBy) {
+
+
+            case "name":
+                Collections.sort(annonser, Annonse.alphabetical);
+                break;
+        }
+
+        return getAnnonserFylke(AlleAnnonseName).getAnnonser();
+    }
 
     @Override
     public Annonse getAnnonse(String AlleAnnonseName, String annonseId) {
@@ -104,8 +197,8 @@ public class JsonRepository implements IRepository {
     }
 
     @Override
-    public List<Annonse> getAnnonser(String planetSystemName) {
-        return getAnnonserFylke(planetSystemName).getAnnonser();
+    public List<Annonse> getAnnonser(String fylke) {
+        return getAnnonserFylke(fylke).getAnnonser();
     }
 
 

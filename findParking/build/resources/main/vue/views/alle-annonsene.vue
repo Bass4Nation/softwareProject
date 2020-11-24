@@ -2,7 +2,7 @@
   <section >
     <ul>
       <li v-for="annonse in annonser">
-        <a v-if="alle_annonser" :href="`/alle-annonser/${alle_annonser.name}/annonser/${annonse.id}`">
+        <a v-if="alle_annonser" :href="`/find-parking/${alle_annonser.name}/annonser/${annonse.id}`">
           <section class="single-annonse-container" >
             {{console.log(annonse.tittel)}}
             {{console.log(annonse.pictureUrl)}}
@@ -12,17 +12,15 @@
               </section>
               <section id="rightBlock">
                  <h2>{{annonse.tittel}}</h2>
-                  <p id="adress">{{ annonse.adresse }}</p>
-                 <p class="infotittel">pris pr time:</p><p id="price"> <p> {{ annonse.pris}}kr/t </p>
+                  <p id="stedfelt">Sted:</p><p class="inputdata" id="sted">{{ annonse.sted }}</p> <br>
+                  <p id="adressefelt">Adresse:</p><p class="inputdata" id="adress">{{ annonse.adresse }}</p>
+                 <p class="infotittel">pris pr time:</p><p class="inputdata" id="price"> <p> {{ annonse.pris}}kr/t </p>
               </section>
           </section>
         </a>
       </li>
     </ul>
   </section>
-
-
-
 
 </template>
 
@@ -36,13 +34,13 @@ Vue.component("alle-annonsene", {
   created() {
     const alleAnnonserId = this.$javalin.pathParams["alle-annonser-id"];
 
-    fetch(`/api/alle-annonser/${alleAnnonserId}`)
+    fetch(`/api/find-parking/${alleAnnonserId}`)
         .then(res => res.json())
         .then(res => {
           this.alle_annonser = res
         })
         .catch(() => alert("Error while fetching planet system"))
-    fetch(`/api/alle-annonser/${alleAnnonserId}/annonser`)
+    fetch(`/api/find-parking/${alleAnnonserId}/annonser`)
         .then(res => res.json())
         .then(res => this.annonser = res)
         .catch(() => alert("Error while fetching annonser side 2"));

@@ -1,0 +1,19 @@
+[ {
+  "telefonnummer" : "123456789",
+  "navn" : "Ola Nordman",
+  "passord" : "findparking",
+  "annonserId" : [ 0, 2, 4 ],
+  "annonser" : [ ],
+  "adresse" : "Adresse 12B",
+  "sted" : null,
+  "epost" : "find@parking.no"
+}, {
+  "telefonnummer" : "99998877",
+  "navn" : "Admin",
+  "passord" : "admin",
+  "annonserId" : [ 1, 3 ],
+  "annonser" : [ ],
+  "adresse" : "Adresse 10C",
+  "sted" : null,
+  "epost" : "admin"
+} ]
