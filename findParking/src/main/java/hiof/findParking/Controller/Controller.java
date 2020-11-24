@@ -17,6 +17,10 @@ public class Controller {
         context.json(repository.getAlleAnnonser());
     }
 
+    public void getAllBrukere(Context context) {
+        context.json(repository.getAlleBrukere());
+    }
+
     public void getAnnonser(Context context) {
         String fylke = context.pathParam("alle-annonser-id");
         context.json(repository.getAnnonserFylke(fylke));
