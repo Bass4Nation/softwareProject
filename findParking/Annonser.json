@@ -16,8 +16,28 @@
     "tittel" : "En fin plass i Moss",
     "adresse" : "Mosseporten 20",
     "epost" : null,
-    "sted" : "Moss"
-  }, {
+    "sted" : "Moss",
+    "status": false,
+    "statusInfo": "Ledig"
+  },{
+    "telefonnummer" : null,
+    "navn" : "Ola Nordman",
+    "passord" : null,
+    "annonserId" : null,
+    "annonser" : [ ],
+    "beskrivelse" : "Dorime noe rart beskrivelse",
+    "kommentarer" : null,
+    "antallPlasser" : 0,
+    "pris" : 50,
+    "pictureUrl" : "https://mediadc.brightspotcdn.com/dims4/default/7911b12/2147483647/strip/true/crop/2290x1322+0+0/resize/2290x1322!/quality/90/?url=https%3A%2F%2Fmediadc.brightspotcdn.com%2F62%2F05%2Fbbcbb53c660de0e2576a8de0491d%2Fe023efc13eb249b7634a4046b6fe6800.jpg",
+    "id" : 5,
+    "tittel" : "En fin plass i Moss",
+    "adresse" : "Mosseporten 20",
+    "epost" : null,
+    "sted" : "Moss",
+    "status": true,
+    "statusInfo": "Ledig"
+  },{
     "telefonnummer" : null,
     "navn" : "Ola Nordman",
     "passord" : null,
@@ -32,7 +52,9 @@
     "tittel" : "Billig plass i Sarpsborg",
     "adresse" : "Sarpeveien 19",
     "epost" : null,
-    "sted" : "Sarpsborg"
+    "sted" : "Sarpsborg",
+    "status": true,
+    "statusInfo": "Ledig"
   }, {
     "telefonnummer" : null,
     "navn" : "Admin",
@@ -48,7 +70,9 @@
     "tittel" : "Billig plass i Rakkestad",
     "adresse" : "Haldenveien 1374",
     "epost" : null,
-    "sted" : "Rakkestad"
+    "sted" : "Rakkestad",
+    "status": true,
+    "statusInfo": "Ledig"
   }, {
     "telefonnummer" : null,
     "navn" : "Ola Nordman",
@@ -64,7 +88,9 @@
     "tittel" : "En annen plass i Halden",
     "adresse" : "Solveien 12C",
     "epost" : null,
-    "sted" : "Halden"
+    "sted" : "Halden",
+    "status": true,
+    "statusInfo": "Ledig"
   } ]
 }, {
   "name" : "Oslo",
@@ -84,6 +110,8 @@
     "tittel" : "Billig plass i Oslo",
     "adresse" : "Kongsgate 10",
     "epost" : null,
-    "sted" : "Oslo"
+    "sted" : "Oslo",
+    "status": true,
+    "statusInfo": "Ledig"
   } ]
 } ]

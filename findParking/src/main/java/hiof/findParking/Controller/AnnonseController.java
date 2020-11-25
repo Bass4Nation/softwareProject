@@ -15,8 +15,6 @@ public class AnnonseController {
 
     public void getAnnonser(Context context) {
         String planetSystemName = context.pathParam("alle-annonser-id");
-        String sortBy = context.queryParam("sort_by");
-
         List<Annonse> planets = repository.getAnnonser(planetSystemName);
 
         context.json(planets);

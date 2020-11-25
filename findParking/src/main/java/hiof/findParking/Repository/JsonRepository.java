@@ -220,7 +220,6 @@ public class JsonRepository implements IRepository {
         return getAnnonserFylke(fylke).getAnnonser();
     }
 
-
     public Object createAnnonse(String filename, String fylke,String adresse, String navn, String beskrivelse, String name, int pris, String pictureUrl) {
         Alle_Annonser currentLoc = getAnnonserFylke(fylke);
 

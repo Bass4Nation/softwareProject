@@ -21,6 +21,7 @@ public class Application {
         app.get("/find-parking/minSide/:bruker-id", new VueComponent("bruker"));
         app.get("/find-parking/minSide/:bruker-id/annonser", new VueComponent("bruker-annonser"));
         app.get("/find-parking/:alle-annonser-id", new VueComponent("alle-annonsene"));
+//        app.get("/find-parking/:alle-annonser-id/sort_by/:sted-id", new VueComponent("alle-annonsene-sortert"));
         app.get("/find-parking/:alle-annonser-id/annonser/:annonse-id", new VueComponent("annonse-detaljer"));
 
 

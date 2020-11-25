@@ -9,22 +9,9 @@ public class Annonse extends Info{
     private String pictureUrl;
     private int id;
     private static int teller;
+    private boolean status;
+    private String statusInfo;
 
-
-//    public Annonse(String tittel, String kommentarer, int antallPlasser) {
-//        this.tittel = tittel;
-//        this.kommentarer = kommentarer;
-//        this.antallPlasser = antallPlasser;
-//    }
-
-
-
-//    public Annonse(String beskrivelse, String tittel, String kommentarer, int antallPlasser) {
-//        super(beskrivelse);
-//        this.tittel = tittel;
-//        this.kommentarer = kommentarer;
-//        this.antallPlasser = antallPlasser;
-//    }
 
     public Annonse(String adresse, String navn, String beskrivelse, String name, int pris, String pictureUrl) {
         super(adresse, navn, beskrivelse);
@@ -58,6 +45,30 @@ public class Annonse extends Info{
         }
     };
 
+
+    public String getStatusInfo(boolean status) {
+        status = true;
+        if(status){
+            System.out.println("Denne plassen er ledig");
+            statusInfo = "Ledig";
+        }else{
+            System.out.println("Denne plassen er ikke ledig");
+            statusInfo = "Utleid";
+        }
+        return statusInfo;
+    }
+
+    public void setStatusInfo(String statusInfo) {
+        this.statusInfo = statusInfo;
+    }
+
+    public boolean isStatus() {
+        return status;
+    }
+
+    public void setStatus(boolean status) {
+        this.status = status;
+    }
 
     public String getTittel() {
         return name;

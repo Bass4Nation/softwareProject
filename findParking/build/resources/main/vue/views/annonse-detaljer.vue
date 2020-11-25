@@ -43,7 +43,7 @@
 
               .then(res => res.json())
               .then(res => this.annonse = res)
-      // .catch(() => alert("Error while fetching annonse"));
+      .catch(() => alert("Error while fetching annonse"));
     }
   });
 </script>

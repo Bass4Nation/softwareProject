@@ -6,7 +6,7 @@
       <a class="btn2" href="javascript:history.back()">tilbake</a>
       <a class="btn2" href="javascript:history.back()">Reset</a>
       <section id="stedVelger">
-        <select  id="steder">
+        <select onchange="val()" id="steder">
           <option id="valg" v-for="annonse in annonser" v-if="annonse" :value="`${annonse.sted}`">{{ annonse.sted }}</option>
         </select>
       </section>
@@ -16,8 +16,6 @@
       <li v-for="annonse in annonser">
         <a v-if="alle_annonser" :href="`/find-parking/${alle_annonser.name}/annonser/${annonse.id}`">
           <section class="single-annonse-container" >
-            {{console.log(annonse.tittel)}}
-            {{console.log(annonse.pictureUrl)}}
               <section id="leftBlock">
                 <img   v-if="annonse.pictureUrl" class="list-image" v-bind:src="annonse.pictureUrl">
                 <img   v-else class="list-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Icon-round-Question_mark.svg/480px-Icon-round-Question_mark.svg.png">
@@ -26,6 +24,7 @@
                  <h2>{{annonse.tittel}}</h2>
                   <p id="stedfelt">Sted:</p><p class="inputdata" id="sted">{{ annonse.sted }}</p> <br>
                   <p id="adressefelt">Adresse:</p><p class="inputdata" id="adress">{{ annonse.adresse }}</p>
+                  <p id="statusfelt">Status:</p><p class="inputdata" id="status">{{ annonse.statusInfo }}</p>
                  <p class="infotittel">pris pr time:</p><p class="inputdata" id="price"> <p> {{ annonse.pris}}kr/t </p>
               </section>
           </section>
@@ -57,6 +56,15 @@ Vue.component("alle-annonsene", {
         .then(res => this.annonser = res)
         .catch(() => alert("Error while fetching annonser detaljer"));
   }
-});
+}
+);
+</script>
+
+<script lang="js">
+function val() {
+  sted = document.getElementById("steder").value;
+  console.log(sted);
+}
+
 </script>
 

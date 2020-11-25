@@ -44,6 +44,7 @@
                 .then(res => this.user = res)
             // .catch(() => alert("Error while fetching Bruker"));
         }
+
     });
 </script>
 

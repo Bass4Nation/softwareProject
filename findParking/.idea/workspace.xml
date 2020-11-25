@@ -57,7 +57,7 @@
     <property name="show.unlinked.gradle.project.popup" value="true" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Application">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hiof.findParking.Application" />
       <module name="findParking.main" />
@@ -71,19 +71,61 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Er_Annonsen_ledig_eller_ikke" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;Er_Annonsen_ledig_eller_ikke&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Er_Annonsen_ledig_eller_ikke.erAnnonsenLedig" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;Er_Annonsen_ledig_eller_ikke.erAnnonsenLedig&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Er_Annonsen_ledig_eller_ikke.erAnnonsenLedig" />
+        <item itemvalue="Gradle.Er_Annonsen_ledig_eller_ikke" />
         <item itemvalue="Application.Application" />
       </list>
     </recent_temporary>
@@ -102,6 +144,7 @@
       <workItem from="1606230034212" duration="11921000" />
       <workItem from="1606247509143" duration="1033000" />
       <workItem from="1606248646306" duration="12756000" />
+      <workItem from="1606320993839" duration="14000000" />
     </task>
     <servers />
   </component>
@@ -125,31 +168,39 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1606150967865" />
-    <state x="403" y="207" key="#com.intellij.ide.util.MemberChooser" timestamp="1606240431730">
+    <state x="685" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606327166429">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="685" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1606327166429" />
+    <state x="403" y="207" key="#com.intellij.ide.util.MemberChooser" timestamp="1606340010149">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="403" y="207" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1606240431730" />
-    <state x="403" y="207" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1606231025947" />
+    <state x="403" y="207" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1606340010149" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1606247678804">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1606247678804" />
-    <state width="1877" height="279" key="GridCell.Tab.0.bottom" timestamp="1606261412057">
+    <state width="914" height="276" key="GridCell.Tab.0.bottom" timestamp="1606340870601">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1606261412057" />
-    <state width="1877" height="279" key="GridCell.Tab.0.center" timestamp="1606261412057">
+    <state width="1877" height="145" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1606329549314" />
+    <state width="914" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606340870601" />
+    <state width="914" height="276" key="GridCell.Tab.0.center" timestamp="1606340870601">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1606261412057" />
-    <state width="1877" height="279" key="GridCell.Tab.0.left" timestamp="1606261412057">
+    <state width="1877" height="145" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1606329549313" />
+    <state width="914" height="276" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606340870601" />
+    <state width="914" height="276" key="GridCell.Tab.0.left" timestamp="1606340870601">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1606261412057" />
-    <state width="1877" height="279" key="GridCell.Tab.0.right" timestamp="1606261412057">
+    <state width="1877" height="145" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1606329549313" />
+    <state width="914" height="276" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606340870601" />
+    <state width="914" height="276" key="GridCell.Tab.0.right" timestamp="1606340870601">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1606261412057" />
+    <state width="1877" height="145" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1606329549314" />
+    <state width="914" height="276" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606340870601" />
     <state x="566" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1606239179658">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
