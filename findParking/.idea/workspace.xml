@@ -33,6 +33,43 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="findParking" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="findParking" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="findParking" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -54,8 +91,15 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../softwareProject-Beck/findParking" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GitHub\softwareProject\findParking\src\main" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Application">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -82,12 +126,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Er_Annonsen_ledig_eller_ikke" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tester.annonse" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;Er_Annonsen_ledig_eller_ikke&quot;" />
+        <option name="scriptParameters" value="--tests &quot;Tester.annonse&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -101,30 +145,60 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Er_Annonsen_ledig_eller_ikke.erAnnonsenLedig" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;Er_Annonsen_ledig_eller_ikke.erAnnonsenLedig&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
+    <configuration name="Tester" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="findParking.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="no.find.parking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="no.find.parking" />
+      <option name="MAIN_CLASS_NAME" value="no.find.parking.Tester" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tester.annonse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="findParking.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="no.find.parking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="no.find.parking" />
+      <option name="MAIN_CLASS_NAME" value="no.find.parking.Tester" />
+      <option name="METHOD_NAME" value="annonse" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tester.createAnnonse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="findParking.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="no.find.parking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="no.find.parking" />
+      <option name="MAIN_CLASS_NAME" value="no.find.parking.Tester" />
+      <option name="METHOD_NAME" value="createAnnonse" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Er_Annonsen_ledig_eller_ikke.erAnnonsenLedig" />
-        <item itemvalue="Gradle.Er_Annonsen_ledig_eller_ikke" />
         <item itemvalue="Application.Application" />
+        <item itemvalue="JUnit.Tester.createAnnonse" />
+        <item itemvalue="JUnit.Tester.annonse" />
+        <item itemvalue="Gradle.Tester.annonse" />
+        <item itemvalue="JUnit.Tester" />
       </list>
     </recent_temporary>
   </component>
@@ -146,6 +220,8 @@
       <workItem from="1606340963545" duration="14129000" />
       <workItem from="1606368453553" duration="8976000" />
       <workItem from="1606380572856" duration="1773000" />
+      <workItem from="1606411737706" duration="4574000" />
+      <workItem from="1606416384363" duration="8636000" />
     </task>
     <servers />
   </component>
@@ -165,6 +241,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="161" key="#Plugins" timestamp="1606416817930">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="161" key="#Plugins/0.0.1920.1040@0.0.1920.1040" timestamp="1606416817930" />
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606150967865">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -173,35 +253,60 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="685" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1606327166429" />
-    <state x="403" y="207" key="#com.intellij.ide.util.MemberChooser" timestamp="1606373046772">
+    <state x="403" y="207" key="#com.intellij.ide.util.MemberChooser" timestamp="1606424661727">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="403" y="207" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1606373046772" />
-    <state x="403" y="207" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1606340010149" />
+    <state x="403" y="207" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1606424661727" />
+    <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1606416254357">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1606416254357" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1606247678804">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1606247678804" />
-    <state width="1877" height="129" key="GridCell.Tab.0.bottom" timestamp="1606382325952">
+    <state width="1877" height="347" key="GridCell.Tab.0.bottom" timestamp="1606425830084">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="129" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1606378759381" />
-    <state width="1877" height="129" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606382325952" />
-    <state width="1877" height="129" key="GridCell.Tab.0.center" timestamp="1606382325952">
+    <state width="1877" height="290" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1606416314254" />
+    <state width="1877" height="347" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606425830084" />
+    <state width="1877" height="347" key="GridCell.Tab.0.center" timestamp="1606425830084">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="129" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1606378759381" />
-    <state width="1877" height="129" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606382325952" />
-    <state width="1877" height="129" key="GridCell.Tab.0.left" timestamp="1606382325952">
+    <state width="1877" height="290" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1606416314254" />
+    <state width="1877" height="347" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606425830084" />
+    <state width="1877" height="347" key="GridCell.Tab.0.left" timestamp="1606425830084">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="129" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1606378759381" />
-    <state width="1877" height="129" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606382325952" />
-    <state width="1877" height="129" key="GridCell.Tab.0.right" timestamp="1606382325952">
+    <state width="1877" height="290" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1606416314253" />
+    <state width="1877" height="347" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606425830084" />
+    <state width="1877" height="347" key="GridCell.Tab.0.right" timestamp="1606425830084">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="129" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1606378759381" />
-    <state width="1877" height="129" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606382325952" />
+    <state width="1877" height="290" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1606416314254" />
+    <state width="1877" height="347" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606425830084" />
+    <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1606425830084">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606425830084" />
+    <state width="1877" height="347" key="GridCell.Tab.1.center" timestamp="1606425830084">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606425830084" />
+    <state width="1877" height="347" key="GridCell.Tab.1.left" timestamp="1606425830084">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606425830084" />
+    <state width="1877" height="347" key="GridCell.Tab.1.right" timestamp="1606425830084">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="347" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606425830084" />
+    <state x="142" y="119" key="SettingsEditor" timestamp="1606417939429">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1606416279933" />
+    <state x="142" y="119" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606417939429" />
     <state x="566" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1606239179658">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -8,9 +8,9 @@
     "pictureUrl" : "https://mediadc.brightspotcdn.com/dims4/default/7911b12/2147483647/strip/true/crop/2290x1322+0+0/resize/2290x1322!/quality/90/?url=https%3A%2F%2Fmediadc.brightspotcdn.com%2F62%2F05%2Fbbcbb53c660de0e2576a8de0491d%2Fe023efc13eb249b7634a4046b6fe6800.jpg",
     "id" : 0,
     "status" : false,
-    "adresse" : "Mosseporten 20",
     "sted" : "Moss",
-    "epost" : null
+    "epost" : null,
+    "adresse" : "Mosseporten 20"
   }, {
     "telefonnummer" : null,
     "beskrivelse" : "Dette er annonse 2 beskrivelse",
@@ -19,9 +19,9 @@
     "pictureUrl" : "https://www.goturpin.com/pages/news-and-announcements/image/section-image/parking-8.jpg",
     "id" : 1,
     "status" : false,
-    "adresse" : "Sarpeveien 19",
     "sted" : "Sarpsborg",
-    "epost" : null
+    "epost" : null,
+    "adresse" : "Sarpeveien 19"
   }, {
     "telefonnummer" : null,
     "beskrivelse" : "Dette er annonse 1 i Oslo",
@@ -30,9 +30,9 @@
     "pictureUrl" : "https://www.goturpin.com/pages/news-and-announcements/image/section-image/parking-8.jpg",
     "id" : 2,
     "status" : false,
-    "adresse" : "Haldenveien 1374",
     "sted" : "Rakkestad",
-    "epost" : null
+    "epost" : null,
+    "adresse" : "Haldenveien 1374"
   }, {
     "telefonnummer" : null,
     "beskrivelse" : "TASIDGHIUASDHIAUOSHDIOUAS",
@@ -41,53 +41,31 @@
     "pictureUrl" : "https://cdn.abcotvs.com/dip/images/5896174_013120-kgo-parking-spot-img_Image_00-00-59,06.jpg?w=1600",
     "id" : 3,
     "status" : false,
-    "adresse" : "Solveien 12C",
     "sted" : "Halden",
-    "epost" : null
+    "epost" : null,
+    "adresse" : "Solveien 12C"
   }, {
     "telefonnummer" : null,
-    "beskrivelse" : null,
-    "tittel" : null,
-    "pris" : 10.0,
-    "pictureUrl" : null,
+    "beskrivelse" : "sadasd",
+    "tittel" : "test",
+    "pris" : 123123.0,
+    "pictureUrl" : "https://www.canon.no/media/CINC_Sample_EOS_7D_Mark_II_MX054_-_35mm_F4.5_ISO1600_1_3985s_tcm85-1436734.jpg",
     "id" : 0,
     "status" : false,
-    "adresse" : null,
-    "sted" : null,
-    "epost" : null
+    "sted" : "Halden",
+    "epost" : null,
+    "adresse" : "Steder"
   }, {
     "telefonnummer" : null,
-    "beskrivelse" : null,
-    "tittel" : null,
-    "pris" : 10.0,
-    "pictureUrl" : null,
-    "id" : 0,
+    "beskrivelse" : "123",
+    "tittel" : "twra123",
+    "pris" : 123.0,
+    "pictureUrl" : "https://www.canon.no/media/CINC_Sample_EOS_7D_Mark_II_MX054_-_35mm_F4.5_ISO1600_1_3985s_tcm85-1436734.jpg",
+    "id" : 5,
     "status" : false,
-    "adresse" : null,
-    "sted" : null,
-    "epost" : null
-  }, {
-    "telefonnummer" : null,
-    "beskrivelse" : null,
-    "tittel" : null,
-    "pris" : 10.0,
-    "pictureUrl" : null,
-    "id" : 1,
-    "status" : false,
-    "adresse" : null,
-    "sted" : null,
-    "epost" : null
-  }, {
-    "telefonnummer" : null,
-    "beskrivelse" : "asdasd",
-    "tittel" : "twrasd",
-    "pris" : 10.0,
-    "pictureUrl" : "https://www.1231asdasdaa2fa.no",
-    "id" : 0,
-    "status" : false,
-    "adresse" : "asdasd",
-    "sted" : "asd",
-    "epost" : null
+    "sted" : "Skiptvet",
+    "epost" : null,
+    "adresse" : "Ertevannveien 813"
   } ],
   "name" : "Viken"
 }, {
@@ -100,9 +78,20 @@
     "pictureUrl" : "https://www.goturpin.com/pages/news-and-announcements/image/section-image/parking-8.jpg",
     "id" : 4,
     "status" : false,
-    "adresse" : "Kongsgate 10",
     "sted" : "Oslo",
-    "epost" : null
+    "epost" : null,
+    "adresse" : "Kongsgate 10"
+  }, {
+    "telefonnummer" : null,
+    "beskrivelse" : "fdsfds",
+    "tittel" : "twrasd",
+    "pris" : 11.0,
+    "pictureUrl" : "https://www.canon.no/media/CINC_Sample_EOS_7D_Mark_II_MX054_-_35mm_F4.5_ISO1600_1_3985s_tcm85-1436734.jpg",
+    "id" : 5,
+    "status" : false,
+    "sted" : "Skiptvet",
+    "epost" : null,
+    "adresse" : "asf"
   } ],
   "name" : "Oslo"
 } ]

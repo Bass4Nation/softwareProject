@@ -1,10 +1,5 @@
 package hiof.findParking.Repository;
-
-
-
-
 import hiof.findParking.model.*;
-
 import java.util.List;
 
 public interface IRepository {

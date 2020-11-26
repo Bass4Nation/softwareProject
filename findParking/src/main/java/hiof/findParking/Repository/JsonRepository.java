@@ -17,43 +17,43 @@ import java.util.List;
 public class JsonRepository implements IRepository {
     public List<Alle_Annonser> allAnnonser = fileReader("Annonser.json");
     public List<Bruker> allBrukere = fileReaderUser("Brukere.json");
-//private List<Alle_Annonser> allAnnonser = new ArrayList<>();
-//private List<Bruker> allBrukere = new ArrayList<>();
-
-//    public JsonRepository() {
-//        mangeAnnonser();
-//        writeToFile("Annonser.json", allAnnonser);
-//        writeToFileUser("Brukere.json", allBrukere);
+////private List<Alle_Annonser> allAnnonser = new ArrayList<>();
+////private List<Bruker> allBrukere = new ArrayList<>();
+//
+////    public JsonRepository() {
+////        mangeAnnonser();
+////        writeToFile("Annonser.json", allAnnonser);
+////        writeToFileUser("Brukere.json", allBrukere);
+////    }
+//
+//
+//    private void mangeAnnonser() {
+//
+//        Alle_Annonser viken = new Alle_Annonser("Viken","https://itstud.hiof.no/~kristoss/secondYear/finnParking/views/media/viken.jpg");
+//        Alle_Annonser oslo = new Alle_Annonser("Oslo","https://itstud.hiof.no/~kristoss/secondYear/finnParking/views/media/oslo.jpg");
+//        int[] id ={0,2,4};
+//        int[] emptyId ={1,3};
+//        List<Annonse> annonser = new ArrayList<>();
+////------------------------------------------------------ Bruker ----------------------------
+//        Bruker bruker1 = new Bruker("find@parking.no","findparking", "Ola Nordman", "Adresse 12B", "123456789", id, annonser);
+//        Bruker bruker2 = new Bruker("admin", "admin","Admin", "Adresse 10C", "99998877", emptyId, annonser);
+////-------------------------------------------------------- Annonser ----------------------------
+//        viken.addAnnonse(new Annonse("Mosseporten 20","Moss","Dorime noe rart beskrivelse", "En fin plass i Moss", 50, "https://mediadc.brightspotcdn.com/dims4/default/7911b12/2147483647/strip/true/crop/2290x1322+0+0/resize/2290x1322!/quality/90/?url=https%3A%2F%2Fmediadc.brightspotcdn.com%2F62%2F05%2Fbbcbb53c660de0e2576a8de0491d%2Fe023efc13eb249b7634a4046b6fe6800.jpg"));
+//        viken.addAnnonse(new Annonse("Sarpeveien 19","Sarpsborg","Dette er annonse 2 beskrivelse", "Billig plass i Sarpsborg", 20, "https://www.goturpin.com/pages/news-and-announcements/image/section-image/parking-8.jpg"));
+//        viken.addAnnonse(new Annonse("Haldenveien 1374","Rakkestad","Dette er annonse 1 i Oslo", "Billig plass i Rakkestad", 20, "https://www.goturpin.com/pages/news-and-announcements/image/section-image/parking-8.jpg"));
+//        viken.addAnnonse(new Annonse("Solveien 12C", "Halden", "TASIDGHIUASDHIAUOSHDIOUAS", "En annen plass i Halden", 10, "https://cdn.abcotvs.com/dip/images/5896174_013120-kgo-parking-spot-img_Image_00-00-59,06.jpg?w=1600" ));
+//        oslo.addAnnonse(new Annonse("Kongsgate 10","Oslo","Dette er annonse 1 i Oslo", "Billig plass i Oslo", 200, "https://www.goturpin.com/pages/news-and-announcements/image/section-image/parking-8.jpg"));
+//
+//
+//        allAnnonser.add(viken);
+//        allAnnonser.add(oslo);
+//
+////        allBrukere.add(bruker1);
+////        allBrukere.add(bruker2);
+////        addAnnonserToUser(allBrukere, allAnnonser);
+//
+//
 //    }
-
-
-    private void mangeAnnonser() {
-
-        Alle_Annonser viken = new Alle_Annonser("Viken","https://itstud.hiof.no/~kristoss/secondYear/finnParking/views/media/viken.jpg");
-        Alle_Annonser oslo = new Alle_Annonser("Oslo","https://itstud.hiof.no/~kristoss/secondYear/finnParking/views/media/oslo.jpg");
-        int[] id ={0,2,4};
-        int[] emptyId ={1,3};
-        List<Annonse> annonser = new ArrayList<>();
-//------------------------------------------------------ Bruker ----------------------------
-        Bruker bruker1 = new Bruker("find@parking.no","findparking", "Ola Nordman", "Adresse 12B", "123456789", id, annonser);
-        Bruker bruker2 = new Bruker("admin", "admin","Admin", "Adresse 10C", "99998877", emptyId, annonser);
-//-------------------------------------------------------- Annonser ----------------------------
-        viken.addAnnonse(new Annonse("Mosseporten 20","Moss","Dorime noe rart beskrivelse", "En fin plass i Moss", 50, "https://mediadc.brightspotcdn.com/dims4/default/7911b12/2147483647/strip/true/crop/2290x1322+0+0/resize/2290x1322!/quality/90/?url=https%3A%2F%2Fmediadc.brightspotcdn.com%2F62%2F05%2Fbbcbb53c660de0e2576a8de0491d%2Fe023efc13eb249b7634a4046b6fe6800.jpg"));
-        viken.addAnnonse(new Annonse("Sarpeveien 19","Sarpsborg","Dette er annonse 2 beskrivelse", "Billig plass i Sarpsborg", 20, "https://www.goturpin.com/pages/news-and-announcements/image/section-image/parking-8.jpg"));
-        viken.addAnnonse(new Annonse("Haldenveien 1374","Rakkestad","Dette er annonse 1 i Oslo", "Billig plass i Rakkestad", 20, "https://www.goturpin.com/pages/news-and-announcements/image/section-image/parking-8.jpg"));
-        viken.addAnnonse(new Annonse("Solveien 12C", "Halden", "TASIDGHIUASDHIAUOSHDIOUAS", "En annen plass i Halden", 10, "https://cdn.abcotvs.com/dip/images/5896174_013120-kgo-parking-spot-img_Image_00-00-59,06.jpg?w=1600" ));
-        oslo.addAnnonse(new Annonse("Kongsgate 10","Oslo","Dette er annonse 1 i Oslo", "Billig plass i Oslo", 200, "https://www.goturpin.com/pages/news-and-announcements/image/section-image/parking-8.jpg"));
-
-
-        allAnnonser.add(viken);
-        allAnnonser.add(oslo);
-
-//        allBrukere.add(bruker1);
-//        allBrukere.add(bruker2);
-//        addAnnonserToUser(allBrukere, allAnnonser);
-
-
-    }
 
     public List<Bruker> addAnnonserToUser(List<Bruker> user, List<Alle_Annonser> alleAnnonser){
         List<Annonse> annonseLister = new ArrayList<>();
@@ -179,23 +179,17 @@ public class JsonRepository implements IRepository {
         return null;
     }
 
-//    @Override
-//    public Alle_Annonser getAlleAnnonse(String AlleAnnonseName) {
-//        return null;
-//    }
-
 
     public List<Annonse> getAlleAnnonse(String AlleAnnonseName) {
         return getAnnonserFylke(AlleAnnonseName).getAnnonser();
     }
 
     @Override
-    public Annonse getAnnonse(String AlleAnnonseName, String annonseId) {
+    public Annonse getAnnonse(String AlleAnnonseName, String annonseTittel) {
         List<Annonse> ann = getAnnonserFylke(AlleAnnonseName).getAnnonser();
-        int id = Integer.parseInt(annonseId);
         for (Annonse annonse : ann){
 //            Må endre her om den skal sjekke etter noe annet på en singel annonse
-            if ((annonse.getId() == id)){
+            if ((annonse.getTittel().equals(annonseTittel))){
                 return annonse;
             }
         }

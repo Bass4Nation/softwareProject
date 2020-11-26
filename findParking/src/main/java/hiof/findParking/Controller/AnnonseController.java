@@ -14,17 +14,17 @@ public class AnnonseController {
     }
 
     public void getAnnonser(Context context) {
-        String planetSystemName = context.pathParam("alle-annonser-id");
-        List<Annonse> planets = repository.getAnnonser(planetSystemName);
+        String alleAnnonserId = context.pathParam("alle-annonser-id");
+        List<Annonse> annonser = repository.getAnnonser(alleAnnonserId);
 
-        context.json(planets);
+        context.json(annonser);
     }
 
     public void getAnnonse(Context context) {
-        String planetSystemName = context.pathParam("alle-annonser-id");
-        String planetName = context.pathParam("annonse-id");
+        String alleAnnonserId = context.pathParam("alle-annonser-id");
+        String annonserId = context.pathParam("annonse-id");
 
-        context.json(repository.getAnnonse(planetSystemName, planetName));
+        context.json(repository.getAnnonse(alleAnnonserId, annonserId));
     }
 
 }

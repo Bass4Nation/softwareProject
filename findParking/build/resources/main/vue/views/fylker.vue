@@ -419,4 +419,13 @@ Vue.component("fylker", {
     font-size: .7em;
     margin: .3em;
   }
+  #buyblock{
+    text-align: center;
+  }
+  #buyblock p{
+    margin-bottom: 5em;
+    margin-top: 1em;
+    font-size: 1em;
+  }
+
 </style>

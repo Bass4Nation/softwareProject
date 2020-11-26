@@ -17,11 +17,11 @@
       <p id="sted">{{ annonse.sted }}</p>
       <p class="infotittel">Adresse:</p>
       <p id="adress">{{ annonse.adresse }}</p>
-      <p class="infotittel">pris pr time:</p><p id="price"> <p> {{ annonse.pris}}kr/t </p>
+      <p class="infotittel">Pris:</p><p id="price"> <p> {{ annonse.pris}}kr/dag </p>
       <p class="infotittel">Beskrivelse:</p><p> {{ annonse.beskrivelse}}</p>
     </section>
     <section id="buttonBlock">
-      <button class="btn" type="button" id="buyBtn">BESTILL</button>
+      <a class="btn" type="button" :href="`/find-parking/annonse/order`"  id="buyBtn">BESTILL</a>
     </section>
 
   </section>

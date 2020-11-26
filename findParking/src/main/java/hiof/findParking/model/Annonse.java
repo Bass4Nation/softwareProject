@@ -21,18 +21,6 @@ public class Annonse extends Info{
 
     public Annonse(){}
 
-    public String getStatusInfo(boolean status) {
-        status = true;
-        if(status){
-            System.out.println("Denne plassen er ledig");
-            statusInfo = "Ledig";
-        }else{
-            System.out.println("Denne plassen er ikke ledig");
-            statusInfo = "Utleid";
-        }
-        return statusInfo;
-    }
-
     public void setStatusInfo(String statusInfo) {
         this.statusInfo = statusInfo;
     }
@@ -65,10 +53,6 @@ public class Annonse extends Info{
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public String getPictureUrl() {
         return pictureUrl;
     }
@@ -79,7 +63,7 @@ public class Annonse extends Info{
 
     @Override
     public String toString(){
-        return String.format("Annonsetittel %s, pris: %f kr/t, beskrivelse: %s, addresse: %s ",tittel, pris,getBeskrivelse(), getAdresse());
+        return String.format("Annonsetittel %s, pris: %f kr/dag, beskrivelse: %s, addresse: %s ",tittel, pris,getBeskrivelse(), getAdresse());
     }
 
 }

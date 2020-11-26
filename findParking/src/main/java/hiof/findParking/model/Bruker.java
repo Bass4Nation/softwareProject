@@ -1,11 +1,9 @@
 package hiof.findParking.model;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Bruker extends KontaktInfo {
-//    private noe for annonser
     private String navn, passord;
     private int[] annonserId;
     private List<Annonse> annonser = new ArrayList<Annonse>();
