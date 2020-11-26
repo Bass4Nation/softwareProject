@@ -10,7 +10,7 @@ Walter | Kristoffer.S, Kristoffer.B | Kristoffer.S, Kristoffer.B, Walter | Walte
 # Dokumentasjon:
 Under vill du finne dokumentasjon for bruk av appen/prototypen. Hvordan å navigere appen/prototypen, og hva appen/prototypen trenger for å kjøres
 # Bruk
-I prototypen er man "logget inn" som admin. dvs at man har fullstendige rettigheter. Siden dette er en Java webapp, Går vi utifra at eieren ville hostet dette ved bruk av deres egne resusjer. men for prototypen bruker vi Javalin via IntelliJ. mer info om hva som er nødvendig for å kjøre finenr du i "Dependencies" delev av dokumentasjonen.
+I prototypen er man "logget inn" som admin. dvs at man har fullstendige rettigheter. Siden dette er en Java webapp, Går vi utifra at eieren ville hostet dette ved bruk av deres egne resusjer. men for prototypen bruker vi Javalin via IntelliJ. mer info om hva som er nødvendig for å kjøre finner du i "Dependencies" delen av dokumentasjonen.
 
 ### Velg /sorter etter fylke
 ![](https://i.imgur.com/xxW5sj8.png)
