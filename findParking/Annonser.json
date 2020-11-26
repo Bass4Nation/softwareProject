@@ -9,8 +9,8 @@
     "id" : 0,
     "status" : false,
     "adresse" : "Mosseporten 20",
-    "epost" : null,
-    "sted" : "Moss"
+    "sted" : "Moss",
+    "epost" : null
   }, {
     "telefonnummer" : null,
     "beskrivelse" : "Dette er annonse 2 beskrivelse",
@@ -20,8 +20,8 @@
     "id" : 1,
     "status" : false,
     "adresse" : "Sarpeveien 19",
-    "epost" : null,
-    "sted" : "Sarpsborg"
+    "sted" : "Sarpsborg",
+    "epost" : null
   }, {
     "telefonnummer" : null,
     "beskrivelse" : "Dette er annonse 1 i Oslo",
@@ -31,8 +31,8 @@
     "id" : 2,
     "status" : false,
     "adresse" : "Haldenveien 1374",
-    "epost" : null,
-    "sted" : "Rakkestad"
+    "sted" : "Rakkestad",
+    "epost" : null
   }, {
     "telefonnummer" : null,
     "beskrivelse" : "TASIDGHIUASDHIAUOSHDIOUAS",
@@ -42,8 +42,8 @@
     "id" : 3,
     "status" : false,
     "adresse" : "Solveien 12C",
-    "epost" : null,
-    "sted" : "Halden"
+    "sted" : "Halden",
+    "epost" : null
   }, {
     "telefonnummer" : null,
     "beskrivelse" : null,
@@ -53,8 +53,41 @@
     "id" : 0,
     "status" : false,
     "adresse" : null,
-    "epost" : null,
-    "sted" : null
+    "sted" : null,
+    "epost" : null
+  }, {
+    "telefonnummer" : null,
+    "beskrivelse" : null,
+    "tittel" : null,
+    "pris" : 10.0,
+    "pictureUrl" : null,
+    "id" : 0,
+    "status" : false,
+    "adresse" : null,
+    "sted" : null,
+    "epost" : null
+  }, {
+    "telefonnummer" : null,
+    "beskrivelse" : null,
+    "tittel" : null,
+    "pris" : 10.0,
+    "pictureUrl" : null,
+    "id" : 1,
+    "status" : false,
+    "adresse" : null,
+    "sted" : null,
+    "epost" : null
+  }, {
+    "telefonnummer" : null,
+    "beskrivelse" : "asdasd",
+    "tittel" : "twrasd",
+    "pris" : 10.0,
+    "pictureUrl" : "https://www.1231asdasdaa2fa.no",
+    "id" : 0,
+    "status" : false,
+    "adresse" : "asdasd",
+    "sted" : "asd",
+    "epost" : null
   } ],
   "name" : "Viken"
 }, {
@@ -68,8 +101,8 @@
     "id" : 4,
     "status" : false,
     "adresse" : "Kongsgate 10",
-    "epost" : null,
-    "sted" : "Oslo"
+    "sted" : "Oslo",
+    "epost" : null
   } ],
   "name" : "Oslo"
 } ]

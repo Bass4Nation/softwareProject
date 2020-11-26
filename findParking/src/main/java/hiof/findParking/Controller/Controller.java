@@ -36,7 +36,6 @@ public class Controller {
     }
 
     public void createAnnonse(Context context){
-            context.
 
         String fylke = "Viken";
         String adresse = context.formParam("adresse");

@@ -11,7 +11,17 @@
 //        boolean ledig = true;
 //        String expected = "Ledig";
 //        Annonse annonse = new Annonse();
-//        String actual = annonse.ledigStatus(ledig);
+//        String actual = annonse.(ledig);
+//
+//      Assertions.assertEquals(expected,actual);
+//    }
+//
+//    @Test()
+//    public void erAnnonsenLedig() {
+//        boolean ledig = true;
+//        String expected = "Ledig";
+//        Annonse annonse = new Annonse();
+//        String actual = annonse
 //
 //      Assertions.assertEquals(expected,actual);
 //    }
