@@ -47,7 +47,7 @@ som vist over. Må du først gå opp i headeren og trykke "ny annonse" knappen. 
 
 ![](https://i.imgur.com/qn1ZR0A.png)
 
-I dette skjemaet vill du måtte fylle ut Tittel, velge fylke (prototypen har kunn to fylker, så her har du valget mellomn Oslo eller Viken), fylle inn andresse, sted/by, hva du ønsker å ta betalt for plassen din pr dag, bildets URL, og en liten beskrivelse av plassen
+I dette skjemaet vill du måtte fylle ut Tittel, velge fylke (prototypen har kun to fylker, så her har du valget mellom Oslo eller Viken), fylle inn andresse, sted/by, hva du ønsker å ta betalt for plassen din pr dag, bildets URL, og en liten beskrivelse av plassen
 
 
 ## Dependencies
