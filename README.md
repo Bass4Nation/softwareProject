@@ -8,7 +8,7 @@ Webdev (design, HTML, CSS, layouts) | Backend | Testing | Dokumentasjon |
 Walter | Kristoffer.S, Kristoffer.B | Kristoffer.S, Kristoffer.B, Walter | Walter
 
 # Dokumentasjon:
-Under vill du finne dukumentasjon ang bruk av appen/prototypen. og hvordan å navigere appen/prototypen, og hva appen/prototypen trenger for å kjøres
+Under vill du finne dokumentasjon ang bruk av appen/prototypen. og hvordan å navigere appen/prototypen, og hva appen/prototypen trenger for å kjøres
 # Bruk
 I prototypen er man "logget inn" som admin. dvs at man har fullstendige rettigheter. Siden dette er en Java webapp, Går vi utifra at eieren ville hostet dette ved bruk av deres egne resusjer. men for prototypen bruker vi Javalin via IntelliJ. mer info om hva som er nødvendig for å kjøre finenr du i "Dependencies" delev av dokumentasjonen.
 
