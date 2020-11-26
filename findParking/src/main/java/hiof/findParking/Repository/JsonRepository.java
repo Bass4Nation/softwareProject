@@ -171,10 +171,10 @@ public class JsonRepository implements IRepository {
 
 
     @Override
-    public Alle_Annonser getAnnonserFylke(String locName) {
-        for (Alle_Annonser test : allAnnonser)
-            if (test.getName().equals(locName)) {
-                return test;
+    public Alle_Annonser getAnnonserFylke(String fylkenavn) {
+        for (Alle_Annonser fylker : allAnnonser)
+            if (fylker.getName().equals(fylkenavn)) {
+                return fylker;
             }
 
         return null;
@@ -220,17 +220,15 @@ public class JsonRepository implements IRepository {
         return getAnnonserFylke(fylke).getAnnonser();
     }
 
-    public Object createAnnonse(String filename, String fylke,String adresse, String navn, String beskrivelse, String name, int pris, String pictureUrl) {
-        Alle_Annonser currentLoc = getAnnonserFylke(fylke);
+    public Object createAnnonse(String fylke,String adresse, String sted, String beskrivelse, String tittel, double pris, String pictureUrl) {
 
-        if(currentLoc.getName().equals(fylke)) {
-            Annonse aAnnonse = new Annonse(adresse, navn, beskrivelse, name, pris, pictureUrl);
+        if(getAnnonserFylke(fylke).getName().equals(fylke)) {
+            Annonse aAnnonse = new Annonse(adresse,sted, beskrivelse, tittel, pris, pictureUrl);
+            System.out.println(aAnnonse);
+            getAnnonserFylke(fylke).addAnnonse(aAnnonse);
 
-            getAnnonserFylke(fylke).getAnnonser().add(aAnnonse);
+            writeToFile("Annonser.json", allAnnonser);
         }
-
-        File file = writeToFile(filename, allAnnonser);
-
-        return fileReader(file.toString());
+        return fileReader("Annonser.json");
     }
 }

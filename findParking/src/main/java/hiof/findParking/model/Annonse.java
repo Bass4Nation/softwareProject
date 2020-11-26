@@ -3,9 +3,9 @@ package hiof.findParking.model;
 import java.util.Comparator;
 
 public class Annonse extends Info{
-    private String name, kommentarer;
+    private String tittel, kommentarer;
     private int antallPlasser;
-    private int pris;
+    private double pris;
     private String pictureUrl;
     private int id;
     private static int teller;
@@ -13,9 +13,9 @@ public class Annonse extends Info{
     private String statusInfo;
 
 
-    public Annonse(String adresse, String navn, String beskrivelse, String name, int pris, String pictureUrl) {
+    public Annonse(String adresse, String navn, String beskrivelse, String tittel, double pris, String pictureUrl) {
         super(adresse, navn, beskrivelse);
-        this.name = name;
+        this.tittel = tittel;
         this.pris = pris;
         this.pictureUrl = pictureUrl;
         this.id = teller++;
@@ -23,14 +23,14 @@ public class Annonse extends Info{
 
     public Annonse(String adresse, String navn, String beskrivelse, String tittel, String pictureUrl) {
         super(adresse, navn, beskrivelse);
-        this.name = tittel;
+        this.tittel = tittel;
         this.pictureUrl = pictureUrl;
         this.id = teller++;
     }
 
-    public Annonse(String adresse, String sted, String navn, String beskrivelse, String name, int pris, String pictureUrl) {
+    public Annonse(String adresse, String sted, String navn, String beskrivelse, String tittel, double pris, String pictureUrl) {
         super(adresse, sted, navn, beskrivelse);
-        this.name = name;
+        this.tittel = tittel;
         this.pris = pris;
         this.pictureUrl = pictureUrl;
         this.id = teller++;
@@ -71,11 +71,11 @@ public class Annonse extends Info{
     }
 
     public String getTittel() {
-        return name;
+        return tittel;
     }
 
     public void setTittel(String tittel) {
-        this.name = tittel;
+        this.tittel = tittel;
     }
 
     public String getKommentarer() {
@@ -94,11 +94,11 @@ public class Annonse extends Info{
         this.antallPlasser = antallPlasser;
     }
 
-    public int getPris() {
+    public double getPris() {
         return pris;
     }
 
-    public void setPris(int pris) {
+    public void setPris(double pris) {
         this.pris = pris;
     }
 
@@ -120,7 +120,7 @@ public class Annonse extends Info{
 
     @Override
     public String toString(){
-        return String.format("Annonsetittel %s, pris: %d kr/t, beskrivelse: %s, eier: %s, addresse: %s ",name, pris,getBeskrivelse(), getNavn(), getAdresse());
+        return String.format("Annonsetittel %s, pris: %f kr/t, beskrivelse: %s, eier: %s, addresse: %s ",tittel, pris,getBeskrivelse(), getNavn(), getAdresse());
     }
 
 }

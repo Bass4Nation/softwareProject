@@ -17,6 +17,6 @@ public interface IRepository {
     Alle_Annonser getAnnonserFylke(String AlleAnnonseName);
     Annonse getAnnonse(String AlleAnnonseName, String id);
     List<Annonse> getAnnonser(String AlleAnnonseName);
-
+    Object createAnnonse(String fylke,String adresse, String sted, String beskrivelse, String tittel, double pris, String pictureUrl);
 
 }
