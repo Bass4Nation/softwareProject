@@ -1,15 +1,10 @@
 package hiof.findParking.model;
 
-public abstract class Info extends Bruker {
+public abstract class Info extends KontaktInfo {
     private String beskrivelse;
 
-    public Info(String adresse, String navn, String beskrivelse) {
-        super(adresse, navn);
-        this.beskrivelse = beskrivelse;
-    }
-
-    public Info(String adresse, String sted, String navn, String beskrivelse) {
-        super(adresse, sted, navn);
+    public Info(String adresse, String sted, String beskrivelse) {
+        super(adresse, sted);
         this.beskrivelse = beskrivelse;
     }
 

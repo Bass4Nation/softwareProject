@@ -14,6 +14,8 @@ public abstract class KontaktInfo {
         Sted = sted;
     }
 
+    public KontaktInfo(){}
+
     public String getSted() {
         return Sted;
     }
@@ -25,8 +27,6 @@ public abstract class KontaktInfo {
     public KontaktInfo(String adresse) {
         Adresse = adresse;
     }
-
-    public KontaktInfo(){}
 
     public String getEpost() {
         return Epost;

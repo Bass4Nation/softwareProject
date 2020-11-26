@@ -13,7 +13,7 @@ public interface IRepository {
     List<Bruker> getAlleBrukere();
     Bruker getEnBrukere(String navn);
     List<Annonse> getBrukerAnnonser(String navn);
-    List<Annonse>  getAlleAnnonse(String AlleAnnonseName, String sortBy);
+    List<Annonse>  getAlleAnnonse(String AlleAnnonseName);
     Alle_Annonser getAnnonserFylke(String AlleAnnonseName);
     Annonse getAnnonse(String AlleAnnonseName, String id);
     List<Annonse> getAnnonser(String AlleAnnonseName);

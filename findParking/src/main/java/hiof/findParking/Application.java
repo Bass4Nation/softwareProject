@@ -37,7 +37,7 @@ public class Application {
         //-----------------------------API -------------------------------
 
         app.get("/api/find-parking", controller :: getAllAnnonser);
-        app.post("/api/find-parking/:alle-annonser-id/creator", controller :: createAnnonse);
+        app.post("/api/find-parking/creator", controller :: createAnnonse);
         app.get("/api/find-parking/login", controller::getAllBrukere);
         app.get("/api/find-parking/minSide/:bruker-id", controller::getEnBrukere);
         app.get("/api/find-parking/minSide/:bruker-id/annonser", controller::getBrukerAnnonser);

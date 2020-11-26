@@ -2,6 +2,10 @@
   "pictureUrl" : "https://itstud.hiof.no/~kristoss/secondYear/finnParking/views/media/viken.jpg",
   "annonser" : [ {
     "telefonnummer" : null,
+    "navn" : "Ola Nordman",
+    "passord" : null,
+    "annonserId" : null,
+    "annonser" : [ ],
     "beskrivelse" : "Dorime noe rart beskrivelse",
     "tittel" : "En fin plass i Moss",
     "pris" : 50.0,
@@ -13,6 +17,10 @@
     "sted" : "Moss"
   }, {
     "telefonnummer" : null,
+    "navn" : "Admin",
+    "passord" : null,
+    "annonserId" : null,
+    "annonser" : [ ],
     "beskrivelse" : "Dette er annonse 2 beskrivelse",
     "tittel" : "Billig plass i Sarpsborg",
     "pris" : 20.0,
@@ -24,6 +32,10 @@
     "sted" : "Sarpsborg"
   }, {
     "telefonnummer" : null,
+    "navn" : "Ola Nordman",
+    "passord" : null,
+    "annonserId" : null,
+    "annonser" : [ ],
     "beskrivelse" : "Dette er annonse 1 i Oslo",
     "tittel" : "Billig plass i Rakkestad",
     "pris" : 20.0,
@@ -35,6 +47,10 @@
     "sted" : "Rakkestad"
   }, {
     "telefonnummer" : null,
+    "navn" : "Admin",
+    "passord" : null,
+    "annonserId" : null,
+    "annonser" : [ ],
     "beskrivelse" : "TASIDGHIUASDHIAUOSHDIOUAS",
     "tittel" : "En annen plass i Halden",
     "pris" : 10.0,
@@ -44,23 +60,16 @@
     "adresse" : "Solveien 12C",
     "epost" : null,
     "sted" : "Halden"
-  }, {
-    "telefonnummer" : null,
-    "beskrivelse" : null,
-    "tittel" : null,
-    "pris" : 10.0,
-    "pictureUrl" : null,
-    "id" : 0,
-    "status" : false,
-    "adresse" : null,
-    "epost" : null,
-    "sted" : null
   } ],
   "name" : "Viken"
 }, {
   "pictureUrl" : "https://itstud.hiof.no/~kristoss/secondYear/finnParking/views/media/oslo.jpg",
   "annonser" : [ {
     "telefonnummer" : null,
+    "navn" : "Ola Nordman",
+    "passord" : null,
+    "annonserId" : null,
+    "annonser" : [ ],
     "beskrivelse" : "Dette er annonse 1 i Oslo",
     "tittel" : "Billig plass i Oslo",
     "pris" : 200.0,

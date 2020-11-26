@@ -5,39 +5,37 @@ import org.jetbrains.annotations.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Alle_Annonser implements Comparable<Alle_Annonser>{
-    private String name, pictureUrl;
+public class Alle_Annonser {
+    private String fylke, pictureUrl;
     private List<Annonse> annonser = new ArrayList<Annonse>();
 
-    public Alle_Annonser(String name) {
-        this.name = name;
+    public Alle_Annonser(String fylke) {
+        this.fylke = fylke;
     }
 
-    public Alle_Annonser(String name, String pictureUrl) {
-        this.name = name;
+    public Alle_Annonser(String fylke, String pictureUrl) {
+        this.fylke = fylke;
         this.pictureUrl = pictureUrl;
     }
 
-    public Alle_Annonser(){}
+    public Alle_Annonser() {
+    }
+
 
     public void addAnnonse(Annonse annonse) {
         annonser.add(annonse);
     }
 
     public String getName() {
-        return name;
+        return fylke;
     }
 
     public List<Annonse> getAnnonser() {
-        return new ArrayList<Annonse>(annonser);
+        return annonser;
     }
 
-    public Annonse getAnnonse(String tittel) {
-        for (Annonse annonse : annonser) {
-            if (annonse.getTittel().equals(tittel))
-                return annonse;
-        }
-        return null;
+    public void setAnnonser(List<Annonse> annonser) {
+        this.annonser = annonser;
     }
 
     public String getPictureUrl() {
@@ -49,7 +47,7 @@ public class Alle_Annonser implements Comparable<Alle_Annonser>{
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.fylke = name;
     }
 
     @Override
@@ -57,8 +55,4 @@ public class Alle_Annonser implements Comparable<Alle_Annonser>{
         return String.format("Det er %d annonser på denne siden", annonser.size());
     }
 
-    @Override
-    public int compareTo(@NotNull Alle_Annonser o) {
-        return 0;
-    }
 }

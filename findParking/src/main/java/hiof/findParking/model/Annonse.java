@@ -1,10 +1,8 @@
 package hiof.findParking.model;
 
-import java.util.Comparator;
 
 public class Annonse extends Info{
-    private String tittel, kommentarer;
-    private int antallPlasser;
+    private String tittel;
     private double pris;
     private String pictureUrl;
     private int id;
@@ -13,23 +11,8 @@ public class Annonse extends Info{
     private String statusInfo;
 
 
-    public Annonse(String adresse, String navn, String beskrivelse, String tittel, double pris, String pictureUrl) {
-        super(adresse, navn, beskrivelse);
-        this.tittel = tittel;
-        this.pris = pris;
-        this.pictureUrl = pictureUrl;
-        this.id = teller++;
-    }
-
-    public Annonse(String adresse, String navn, String beskrivelse, String tittel, String pictureUrl) {
-        super(adresse, navn, beskrivelse);
-        this.tittel = tittel;
-        this.pictureUrl = pictureUrl;
-        this.id = teller++;
-    }
-
-    public Annonse(String adresse, String sted, String navn, String beskrivelse, String tittel, double pris, String pictureUrl) {
-        super(adresse, sted, navn, beskrivelse);
+    public Annonse(String adresse, String sted, String beskrivelse, String tittel, double pris, String pictureUrl) {
+        super(adresse, sted, beskrivelse);
         this.tittel = tittel;
         this.pris = pris;
         this.pictureUrl = pictureUrl;
@@ -37,14 +20,6 @@ public class Annonse extends Info{
     }
 
     public Annonse(){}
-
-    public static Comparator<Annonse> alphabetical = new Comparator<Annonse>(){
-        @Override
-        public int compare(Annonse oneAnnonse, Annonse twoAnnonse){
-            return (oneAnnonse.getNavn().compareTo(twoAnnonse.getNavn()));
-        }
-    };
-
 
     public String getStatusInfo(boolean status) {
         status = true;
@@ -78,22 +53,6 @@ public class Annonse extends Info{
         this.tittel = tittel;
     }
 
-    public String getKommentarer() {
-        return kommentarer;
-    }
-
-    public void setKommentarer(String kommentarer) {
-        this.kommentarer = kommentarer;
-    }
-
-    public int getAntallPlasser() {
-        return antallPlasser;
-    }
-
-    public void setAntallPlasser(int antallPlasser) {
-        this.antallPlasser = antallPlasser;
-    }
-
     public double getPris() {
         return pris;
     }
@@ -120,7 +79,7 @@ public class Annonse extends Info{
 
     @Override
     public String toString(){
-        return String.format("Annonsetittel %s, pris: %f kr/t, beskrivelse: %s, eier: %s, addresse: %s ",tittel, pris,getBeskrivelse(), getNavn(), getAdresse());
+        return String.format("Annonsetittel %s, pris: %f kr/t, beskrivelse: %s, addresse: %s ",tittel, pris,getBeskrivelse(), getAdresse());
     }
 
 }

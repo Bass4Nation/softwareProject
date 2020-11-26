@@ -22,27 +22,6 @@ public class Bruker extends KontaktInfo {
         this.annonserId = annonserId;
         this.annonser = annonser;
     }
-    public Bruker(String epost,String passord, String navn, String adresse, String telefonnummer, int[] annonserId) {
-        super(epost, adresse, telefonnummer);
-        this.navn = navn;
-        this.passord = passord;
-        this.annonserId = annonserId;
-    }
-    public Bruker(String epost,String passord, String navn, String adresse, String telefonnummer) {
-        super(epost, adresse, telefonnummer);
-        this.navn = navn;
-        this.passord = passord;
-    }
-
-    public Bruker(String adresse, String sted, String navn) {
-        super(adresse, sted);
-        this.navn = navn;
-    }
-
-    public Bruker(String adresse, String navn) {
-        super(adresse);
-        this.navn = navn;
-    }
 
     public Bruker(){}
 
