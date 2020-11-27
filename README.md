@@ -23,14 +23,13 @@ https://i.imgur.com/nghL3nh.png
 # Krav 
 viktighet (“T-Shirt sizing”-estimeringsmetoden)
 
-- krav 1 (s)
-- krav 2 (xl)
-- krav 3 (m)
-- krav 4
-- krav 5
-- krav 6
-- krav 7
-- krav 8
+- krav 1 - Lage annonse -(xl)
+- krav 2 - Logge inn - (l)
+- krav 3 - Leie en parkeringsplass -(xl)
+- krav 4 - Betalemetode - (m)
+- krav 5 - En Min Bruker side - (s)
+- krav 6 - Sortering av annonser - (m)
+- krav 7 - Slette annonse - (m)
 
 # Dokumentasjon:
 Under vill du finne dokumentasjon for bruk av appen/prototypen. Hvordan å navigere appen/prototypen, og hva appen/prototypen trenger for å kjøres.
