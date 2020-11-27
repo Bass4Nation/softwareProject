@@ -205,7 +205,6 @@ public class JsonRepository implements IRepository {
 
         if(getAnnonserFylke(fylke).getName().equals(fylke)) {
             Annonse aAnnonse = new Annonse(adresse,sted, beskrivelse, tittel, pris, pictureUrl);
-            System.out.println(aAnnonse);
             getAnnonserFylke(fylke).addAnnonse(aAnnonse);
 
             writeToFile("Annonser.json", allAnnonser);

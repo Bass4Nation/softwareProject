@@ -9,8 +9,8 @@
     "id" : 0,
     "status" : false,
     "sted" : "Moss",
-    "epost" : null,
-    "adresse" : "Mosseporten 20"
+    "adresse" : "Mosseporten 20",
+    "epost" : null
   }, {
     "telefonnummer" : null,
     "beskrivelse" : "Dette er annonse 2 beskrivelse",
@@ -20,8 +20,8 @@
     "id" : 1,
     "status" : false,
     "sted" : "Sarpsborg",
-    "epost" : null,
-    "adresse" : "Sarpeveien 19"
+    "adresse" : "Sarpeveien 19",
+    "epost" : null
   }, {
     "telefonnummer" : null,
     "beskrivelse" : "Dette er annonse 1 i Oslo",
@@ -31,8 +31,8 @@
     "id" : 2,
     "status" : false,
     "sted" : "Rakkestad",
-    "epost" : null,
-    "adresse" : "Haldenveien 1374"
+    "adresse" : "Haldenveien 1374",
+    "epost" : null
   }, {
     "telefonnummer" : null,
     "beskrivelse" : "TASIDGHIUASDHIAUOSHDIOUAS",
@@ -42,30 +42,19 @@
     "id" : 3,
     "status" : false,
     "sted" : "Halden",
-    "epost" : null,
-    "adresse" : "Solveien 12C"
+    "adresse" : "Solveien 12C",
+    "epost" : null
   }, {
     "telefonnummer" : null,
-    "beskrivelse" : "sadasd",
-    "tittel" : "test",
-    "pris" : 123123.0,
-    "pictureUrl" : "https://www.canon.no/media/CINC_Sample_EOS_7D_Mark_II_MX054_-_35mm_F4.5_ISO1600_1_3985s_tcm85-1436734.jpg",
+    "beskrivelse" : "beskrivelse",
+    "tittel" : "Annonse",
+    "pris" : 10.0,
+    "pictureUrl" : "AnnonseBilde",
     "id" : 0,
     "status" : false,
     "sted" : "Halden",
-    "epost" : null,
-    "adresse" : "Steder"
-  }, {
-    "telefonnummer" : null,
-    "beskrivelse" : "123",
-    "tittel" : "twra123",
-    "pris" : 123.0,
-    "pictureUrl" : "https://www.canon.no/media/CINC_Sample_EOS_7D_Mark_II_MX054_-_35mm_F4.5_ISO1600_1_3985s_tcm85-1436734.jpg",
-    "id" : 5,
-    "status" : false,
-    "sted" : "Skiptvet",
-    "epost" : null,
-    "adresse" : "Ertevannveien 813"
+    "adresse" : "BRAVeien",
+    "epost" : null
   } ],
   "name" : "Viken"
 }, {
@@ -79,19 +68,19 @@
     "id" : 4,
     "status" : false,
     "sted" : "Oslo",
-    "epost" : null,
-    "adresse" : "Kongsgate 10"
+    "adresse" : "Kongsgate 10",
+    "epost" : null
   }, {
     "telefonnummer" : null,
-    "beskrivelse" : "fdsfds",
-    "tittel" : "twrasd",
-    "pris" : 11.0,
-    "pictureUrl" : "https://www.canon.no/media/CINC_Sample_EOS_7D_Mark_II_MX054_-_35mm_F4.5_ISO1600_1_3985s_tcm85-1436734.jpg",
-    "id" : 5,
+    "beskrivelse" : "Så dette er en parkeringsplass",
+    "tittel" : "Siste Test for Parkeringsplass",
+    "pris" : 400.0,
+    "pictureUrl" : "https://elanto.no/wp-content/uploads/2020/05/IMG_3843-1024x768.jpg",
+    "id" : 0,
     "status" : false,
-    "sted" : "Skiptvet",
-    "epost" : null,
-    "adresse" : "asf"
+    "sted" : "Oslo",
+    "adresse" : "Slottsplassen 10",
+    "epost" : null
   } ],
   "name" : "Oslo"
 } ]

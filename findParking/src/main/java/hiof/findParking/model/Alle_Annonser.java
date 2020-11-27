@@ -52,7 +52,7 @@ public class Alle_Annonser {
 
     @Override
     public String toString() {
-        return String.format("Det er %d annonser på denne siden", annonser.size());
+        return String.format("Det er %d annonser i %s med bildet : %s", annonser.size(), fylke, pictureUrl);
     }
 
 }

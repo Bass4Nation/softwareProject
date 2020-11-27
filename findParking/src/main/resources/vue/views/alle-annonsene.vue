@@ -24,7 +24,6 @@
                  <h2>{{annonse.tittel}}</h2>
                   <p id="stedfelt">Sted:</p><p class="inputdata" id="sted">{{ annonse.sted }}</p> <br>
                   <p id="adressefelt">Adresse:</p><p class="inputdata" id="adress">{{ annonse.adresse }}</p>
-                  <p id="statusfelt">Status:</p><p class="inputdata" id="status">{{ annonse.statusInfo }}</p>
                  <p class="infotittel">Pris:</p><p class="inputdata" id="price"> <p> {{ annonse.pris}}kr/dag </p>
               </section>
           </section>

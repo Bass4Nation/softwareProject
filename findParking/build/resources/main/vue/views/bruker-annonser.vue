@@ -16,8 +16,6 @@
       <li v-for="annonse in annonser">
         <a v-if="alle_annonser" :href="`/find-parking/Viken/annonser/${annonse.tittel}`">
           <section class="single-annonse-container" >
-            {{console.log(annonse.tittel)}}
-            {{console.log(annonse.pictureUrl)}}
             <section id="leftBlock">
               <img   v-if="annonse.pictureUrl" class="list-image" v-bind:src="annonse.pictureUrl">
               <img   v-else class="list-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Icon-round-Question_mark.svg/480px-Icon-round-Question_mark.svg.png">

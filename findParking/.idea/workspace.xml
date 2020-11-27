@@ -22,7 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="60b8ece6-fb3b-46dd-b5c4-ac46b9de6942" name="Default Changelist" comment="" />
+    <list default="true" id="ce8fdc08-acf0-4369-ae19-76abc63d3a26" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,29 +46,12 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="findParking" type="f1a62948:ProjectNode" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="findParking" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="findParking" type="f1a62948:ProjectNode" />
-                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
-              </path>
             </expand>
             <select />
           </tree_state>
         </projects_view>
       </state>
     </system>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -80,7 +63,7 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="1khRbX8rzte3O1kqt4xCRn7ChHQ" />
+  <component name="ProjectId" id="1kqTy1CCgn6j3Ji0ZUs2DqBi2Eu" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -90,16 +73,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../softwareProject-Beck/findParking" />
-    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Software-Engineering-og-testing/oblig2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
     <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\GitHub\softwareProject\findParking\src\main" />
-    </key>
   </component>
   <component name="RunManager" selected="Application.Application">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -126,26 +103,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tester.annonse" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;Tester.annonse&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="Tester" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Tester_ToString_Og_Create_Annonse_Metoden" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="findParking.test" />
       <extension name="coverage">
         <pattern>
@@ -154,13 +112,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="no.find.parking" />
-      <option name="MAIN_CLASS_NAME" value="no.find.parking.Tester" />
+      <option name="MAIN_CLASS_NAME" value="no.find.parking.Tester_ToString_Og_Create_Annonse_Metoden" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tester.annonse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Tester_ToString_Og_Create_Annonse_Metoden.tester_Alle_Annonser_ToString_Om_Ikke_Lik" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="findParking.test" />
       <extension name="coverage">
         <pattern>
@@ -169,14 +127,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="no.find.parking" />
-      <option name="MAIN_CLASS_NAME" value="no.find.parking.Tester" />
-      <option name="METHOD_NAME" value="annonse" />
+      <option name="MAIN_CLASS_NAME" value="no.find.parking.Tester_ToString_Og_Create_Annonse_Metoden" />
+      <option name="METHOD_NAME" value="tester_Alle_Annonser_ToString_Om_Ikke_Lik" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tester.createAnnonse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Tester_ToString_Og_Create_Annonse_Metoden.tester_Bruker_ToString_Om_Ikke_Lik" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="findParking.test" />
       <extension name="coverage">
         <pattern>
@@ -185,8 +143,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="no.find.parking" />
-      <option name="MAIN_CLASS_NAME" value="no.find.parking.Tester" />
-      <option name="METHOD_NAME" value="createAnnonse" />
+      <option name="MAIN_CLASS_NAME" value="no.find.parking.Tester_ToString_Og_Create_Annonse_Metoden" />
+      <option name="METHOD_NAME" value="tester_Bruker_ToString_Om_Ikke_Lik" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tester_ToString_Og_Create_Annonse_Metoden.tester_creater_metoden_i_JsonRepository_Viss_Noe_Er_NULL" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="findParking.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="no.find.parking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="no.find.parking" />
+      <option name="MAIN_CLASS_NAME" value="no.find.parking.Tester_ToString_Og_Create_Annonse_Metoden" />
+      <option name="METHOD_NAME" value="tester_creater_metoden_i_JsonRepository_Viss_Noe_Er_NULL" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -195,33 +169,22 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Application" />
-        <item itemvalue="JUnit.Tester.createAnnonse" />
-        <item itemvalue="JUnit.Tester.annonse" />
-        <item itemvalue="Gradle.Tester.annonse" />
-        <item itemvalue="JUnit.Tester" />
+        <item itemvalue="JUnit.Tester_ToString_Og_Create_Annonse_Metoden" />
+        <item itemvalue="JUnit.Tester_ToString_Og_Create_Annonse_Metoden.tester_creater_metoden_i_JsonRepository_Viss_Noe_Er_NULL" />
+        <item itemvalue="JUnit.Tester_ToString_Og_Create_Annonse_Metoden.tester_Bruker_ToString_Om_Ikke_Lik" />
+        <item itemvalue="JUnit.Tester_ToString_Og_Create_Annonse_Metoden.tester_Alle_Annonser_ToString_Om_Ikke_Lik" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="60b8ece6-fb3b-46dd-b5c4-ac46b9de6942" name="Default Changelist" comment="" />
-      <created>1606150911570</created>
+      <changelist id="ce8fdc08-acf0-4369-ae19-76abc63d3a26" name="Default Changelist" comment="" />
+      <created>1606427375247</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1606150911570</updated>
-      <workItem from="1606150913264" duration="27000" />
-      <workItem from="1606150958196" duration="1436000" />
-      <workItem from="1606183625360" duration="3699000" />
-      <workItem from="1606230034212" duration="11921000" />
-      <workItem from="1606247509143" duration="1033000" />
-      <workItem from="1606248646306" duration="12756000" />
-      <workItem from="1606320993839" duration="14000000" />
-      <workItem from="1606340963545" duration="14129000" />
-      <workItem from="1606368453553" duration="8976000" />
-      <workItem from="1606380572856" duration="1773000" />
-      <workItem from="1606411737706" duration="4574000" />
-      <workItem from="1606416384363" duration="8636000" />
+      <updated>1606427375247</updated>
+      <workItem from="1606427376840" duration="15316000" />
     </task>
     <servers />
   </component>
@@ -238,82 +201,69 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="161" key="#Plugins" timestamp="1606416817930">
+    <state x="0" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606428185197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="161" key="#Plugins/0.0.1920.1040@0.0.1920.1040" timestamp="1606416817930" />
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606150967865">
+    <state x="0" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606428185197" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1606432132160">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1606150967865" />
-    <state x="685" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606327166429">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1606432132160" />
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1606442868979">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="685" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1606327166429" />
-    <state x="403" y="207" key="#com.intellij.ide.util.MemberChooser" timestamp="1606424661727">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606442868979" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1606442868979">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="403" y="207" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1606373046772" />
-    <state x="403" y="207" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1606424661727" />
-    <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1606416254357">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606442868979" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1606442868979">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1606416254357" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1606247678804">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606442868979" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1606442868979">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1606247678804" />
-    <state width="1877" height="347" key="GridCell.Tab.0.bottom" timestamp="1606425830084">
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606442868979" />
+    <state width="916" height="351" key="GridCell.Tab.1.bottom" timestamp="1606428197005">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="290" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1606416314254" />
-    <state width="1877" height="347" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606425830084" />
-    <state width="1877" height="347" key="GridCell.Tab.0.center" timestamp="1606425830084">
+    <state width="916" height="351" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606428197005" />
+    <state width="916" height="351" key="GridCell.Tab.1.center" timestamp="1606428197005">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="290" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1606416314254" />
-    <state width="1877" height="347" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606425830084" />
-    <state width="1877" height="347" key="GridCell.Tab.0.left" timestamp="1606425830084">
+    <state width="916" height="351" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606428197005" />
+    <state width="916" height="351" key="GridCell.Tab.1.left" timestamp="1606428197005">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="290" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1606416314253" />
-    <state width="1877" height="347" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606425830084" />
-    <state width="1877" height="347" key="GridCell.Tab.0.right" timestamp="1606425830084">
+    <state width="916" height="351" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606428197005" />
+    <state width="916" height="351" key="GridCell.Tab.1.right" timestamp="1606428197005">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="290" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1606416314254" />
-    <state width="1877" height="347" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606425830084" />
-    <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1606425830084">
+    <state width="916" height="351" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606428197005" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1606427881494">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606425830084" />
-    <state width="1877" height="347" key="GridCell.Tab.1.center" timestamp="1606425830084">
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606427881494" />
+    <state x="985" y="259" width="909" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1606438502147">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606425830084" />
-    <state width="1877" height="347" key="GridCell.Tab.1.left" timestamp="1606425830084">
+    <state x="985" y="259" width="909" height="629" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040@0.0.1920.1040" timestamp="1606438502147" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606434662590">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="347" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606425830084" />
-    <state width="1877" height="347" key="GridCell.Tab.1.right" timestamp="1606425830084">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="347" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606425830084" />
-    <state x="142" y="119" key="SettingsEditor" timestamp="1606417939429">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1606416279933" />
-    <state x="142" y="119" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606417939429" />
-    <state x="566" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1606239179658">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="566" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/1920.0.1024.728@0.0.1920.1040" timestamp="1606239179658" />
-    <state x="207" y="242" key="run.anything.popup" timestamp="1606354487513">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="207" y="242" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606354487513" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606434662590" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

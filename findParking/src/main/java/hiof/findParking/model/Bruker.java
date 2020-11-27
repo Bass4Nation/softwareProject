@@ -68,7 +68,7 @@ public class Bruker extends KontaktInfo {
 
     @Override
     public String toString() {
-        return String.format("Denne brukeren heter %s og har %d annonser på denne siden\n",navn, annonser.size());
+        return String.format("Denne brukeren heter %s og har %d annonser på denne siden med epost : %s\n",navn, annonser.size(), getEpost());
     }
 
 
