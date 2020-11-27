@@ -23,9 +23,9 @@ https://i.imgur.com/nghL3nh.png
 # Krav 
 viktighet (“T-Shirt sizing”-estimeringsmetoden)
 
-- krav 1
-- krav 2
-- krav 3
+- krav 1 (s)
+- krav 2 (xl)
+- krav 3 (m)
 - krav 4
 - krav 5
 - krav 6
