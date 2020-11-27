@@ -20,8 +20,89 @@ Testene skal skje automatisk, og de skal teste funskjonalliteten, og vise hvorda
 link til et eksempel-bilde, om du ønsker å teste ut å lage en annonse.
 https://i.imgur.com/nghL3nh.png
 
+# Krav 
+viktighet (“T-Shirt sizing”-estimeringsmetoden)
+
+- krav 1
+- krav 2
+- krav 3
+- krav 4
+- krav 5
+- krav 6
+- krav 7
+- krav 8
+
 # Dokumentasjon:
 Under vill du finne dokumentasjon for bruk av appen/prototypen. Hvordan å navigere appen/prototypen, og hva appen/prototypen trenger for å kjøres.
+
+## Dependencies
+ting nødvendig for å bygge
+
+Nettleser | Java JRE | OS | Annet | Platform | gradle | Javalin
+------------ | ------------- | ------------- | -------------| -------------| -------------| -------------|
+Må strøtte CSS webkits (Chromium based anbefalt) | version 13 eller nyere | linux, windows, MacOS | internet tilgang & git | PC / Computer | 6.2 eller nyere | 3.7.0 eller nyere
+
+## Installasjon / kjøring
+her går vi utifra at du har lest Dependencies.
+
+
+### Nedlastning
+Start med å klone hele prosjektet via git til din lokale maskin.
+dette gjør du ved å bruke enten en git klient som github/desktop, eller via en terminal.
+
+#### Ved bruk av terminal
+Åpne en terminal og skriv inn følgende;
+```
+git clone https://github.com/Bass4Nation/softwareProject.git
+```
+
+#### ved bruk av github desktop
+klikk på "fil", og så velg " clone repository
+
+![](https://i.imgur.com/6nNWD85.png)
+
+da skal et vindu poppe opp som vist under. velg "URL" tabben.
+
+![](https://i.imgur.com/8Kc7ieN.png)
+
+og her limer du inn linken til dette repoet;
+```
+https://github.com/Bass4Nation/softwareProject.git
+```
+
+velg en plass du ønsker at det skal lagres på. ved å trykke på "choose" knappen. og deretter naviger dit.
+
+### Åpne prosjektet i IntelliJ IDEA
+
+![](https://i.imgur.com/vNxJ1sq.png)
+
+når du åpner intellij får du valget mellom "create new project", "import project", "open", "get from version crontroll".
+
+her velger du "Open" og naviget til der du lagret repository'et. deretter naviger til mappen "findParking" som vist på bildet under.
+
+![](https://i.imgur.com/4i4peav.png)
+
+### Kjøre prosjektet
+når prosjektet har åpnet. kan det hende at intelliJ vill updatere gradle for deg. da vill du få en popup som forteller deg dette. etter det, kan du trykke Run ved å klikke på den grønne knappen som vist på bildet
+
+![](https://i.imgur.com/le7yH71.png)
+
+dersom du ikke får opp en konfigurasjon (der det står "APPLICATION" på bildet over). så klikk på den dropdown pilen og trykk på "Edit Configurations..." som vist under.
+
+![](https://i.imgur.com/FBIIIl4.png)
+
+deretter skal et vindu poppe opp, hvor du kan fylle ut informasjonen så den ser lik ut som på bildet under og deretter trykke "apply", så "ok" , og så endelig på "play" knappen igjen.
+
+![](https://i.imgur.com/FBIIIl4.png)
+
+
+Når du da kjører prosjektet vill en "run prompt" dukke opp nederst i IntelliJ. det vill se ut som på bildet under.
+
+![](https://i.imgur.com/pdqjtfE.png)
+
+her får du en link til "http://localhost:7009/" som du kan trykke på. den vill åpne din nettleser og så kan du bruke siden.
+
+
 
 # Bruk
 I prototypen er man "logget inn" som admin. dvs at man har fullstendige rettigheter. Siden dette er en Java webapp, Går vi utifra at eieren ville hostet dette ved bruk av deres egne resusjer. men for prototypen bruker vi Javalin via IntelliJ. mer info om hva som er nødvendig for å kjøre finner du i "Dependencies" delen av dokumentasjonen.
@@ -66,14 +147,6 @@ som vist over. Må du først gå opp i headeren og trykke "ny annonse" knappen. 
 ![](https://i.imgur.com/qn1ZR0A.png)
 
 I dette skjemaet vill du måtte fylle ut Tittel, velge fylke (prototypen har kun to fylker, så her har du valget mellom Oslo eller Viken), fylle inn adresse, sted/by, hva du ønsker å ta betalt for plassen din pr dag, bildets URL, og en liten beskrivelse av plassen
-
-
-## Dependencies
-ting nødvendig for å bygge
-
-Nettleser | Java JRE | OS | Annet | Platform | gradle | Javalin
------------- | ------------- | ------------- | -------------| -------------| -------------| -------------|
-Må strøtte CSS webkits (Chromium based anbefalt) | version 13 eller nyere | linux, windows, MacOS | internet tilgang | PC / Computer | 6.2 eller nyere | 3.7.0 eller nyere
 
 ## Kjente problemer
 #### Adblockere
