@@ -1,0 +1,53 @@
+<html>
+<head>
+    <meta charset="utf8">
+    <script src="/webjars/vue/2.6.10/dist/vue.min.js"></script>
+    <title>Find Parking</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i|Ubuntu:300,400,500,700" rel="stylesheet">
+    @componentRegistration
+    <style lang="css">
+        
+    header nav a{
+      text-decoration: none;
+      color: white;
+      padding: 6px;
+      background-color: rgb(31, 31, 31);
+      border-radius: 5px;
+      transition: .6s;
+    }
+
+    header nav a:hover{
+      text-decoration: none;
+      color: white;
+      padding: 6px;
+      background-color: rgb(102, 102, 102);
+      border-radius: 5px;
+    }
+
+
+
+    </style>
+</head>
+<header>
+    <a href="/find-parking">
+    <img src="https://itstud.hiof.no/~kristoss/secondYear/finnParking/views/media/logo.png" alt="logo" id="logo"/>
+    </a>
+    <nav>
+        <a href="/find-parking/minSide/Admin"> Min side</a>
+        <a href="/find-parking/creator"> Ny annonse</a>
+    </nav>
+</header>
+
+<body>
+<main id="main-vue" v-cloak>
+    @routeComponent
+</main>
+<script>
+    new Vue({el: "#main-vue"});
+</script>
+</body>
+<footer>
+    <p id="brukernavn">GRUPPE 16 - Software Engineering</p><br>
+    <p id="status">Medlemmer: Walter, Kristoffer S, Kristoffer B</p></p>
+</footer>
+</html>

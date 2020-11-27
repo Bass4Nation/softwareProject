@@ -1,0 +1,97 @@
+[ {
+  "pictureUrl" : "https://itstud.hiof.no/~kristoss/secondYear/finnParking/views/media/viken.jpg",
+  "annonser" : [ {
+    "telefonnummer" : null,
+    "beskrivelse" : "Dorime noe rart beskrivelse",
+    "tittel" : "En fin plass i Moss",
+    "pris" : 50.0,
+    "pictureUrl" : "https://mediadc.brightspotcdn.com/dims4/default/7911b12/2147483647/strip/true/crop/2290x1322+0+0/resize/2290x1322!/quality/90/?url=https%3A%2F%2Fmediadc.brightspotcdn.com%2F62%2F05%2Fbbcbb53c660de0e2576a8de0491d%2Fe023efc13eb249b7634a4046b6fe6800.jpg",
+    "id" : 0,
+    "status" : false,
+    "sted" : "Moss",
+    "adresse" : "Mosseporten 20",
+    "epost" : null
+  }, {
+    "telefonnummer" : null,
+    "beskrivelse" : "Dette er annonse 2 beskrivelse",
+    "tittel" : "Billig plass i Sarpsborg",
+    "pris" : 20.0,
+    "pictureUrl" : "https://www.goturpin.com/pages/news-and-announcements/image/section-image/parking-8.jpg",
+    "id" : 1,
+    "status" : false,
+    "sted" : "Sarpsborg",
+    "adresse" : "Sarpeveien 19",
+    "epost" : null
+  }, {
+    "telefonnummer" : null,
+    "beskrivelse" : "Dette er annonse 1 i Oslo",
+    "tittel" : "Billig plass i Rakkestad",
+    "pris" : 20.0,
+    "pictureUrl" : "https://www.goturpin.com/pages/news-and-announcements/image/section-image/parking-8.jpg",
+    "id" : 2,
+    "status" : false,
+    "sted" : "Rakkestad",
+    "adresse" : "Haldenveien 1374",
+    "epost" : null
+  }, {
+    "telefonnummer" : null,
+    "beskrivelse" : "TASIDGHIUASDHIAUOSHDIOUAS",
+    "tittel" : "En annen plass i Halden",
+    "pris" : 10.0,
+    "pictureUrl" : "https://cdn.abcotvs.com/dip/images/5896174_013120-kgo-parking-spot-img_Image_00-00-59,06.jpg?w=1600",
+    "id" : 3,
+    "status" : false,
+    "sted" : "Halden",
+    "adresse" : "Solveien 12C",
+    "epost" : null
+  }, {
+    "telefonnummer" : null,
+    "beskrivelse" : "beskrivelse",
+    "tittel" : "Annonse",
+    "pris" : 10.0,
+    "pictureUrl" : "AnnonseBilde",
+    "id" : 0,
+    "status" : false,
+    "sted" : "Halden",
+    "adresse" : "BRAVeien",
+    "epost" : null
+  }, {
+    "telefonnummer" : null,
+    "beskrivelse" : "Rå fin plass som passer alle og som er verdt alle penga!\r\nkongen parkerte her en gang.",
+    "tittel" : "Fantastisk plass",
+    "pris" : 10000.0,
+    "pictureUrl" : "https://i.imgur.com/nghL3nh.png",
+    "id" : 0,
+    "status" : false,
+    "sted" : "Degernes",
+    "adresse" : "Lolveien 420",
+    "epost" : null
+  } ],
+  "name" : "Viken"
+}, {
+  "pictureUrl" : "https://itstud.hiof.no/~kristoss/secondYear/finnParking/views/media/oslo.jpg",
+  "annonser" : [ {
+    "telefonnummer" : null,
+    "beskrivelse" : "Dette er annonse 1 i Oslo",
+    "tittel" : "Billig plass i Oslo",
+    "pris" : 200.0,
+    "pictureUrl" : "https://www.goturpin.com/pages/news-and-announcements/image/section-image/parking-8.jpg",
+    "id" : 4,
+    "status" : false,
+    "sted" : "Oslo",
+    "adresse" : "Kongsgate 10",
+    "epost" : null
+  }, {
+    "telefonnummer" : null,
+    "beskrivelse" : "Så dette er en parkeringsplass",
+    "tittel" : "Siste Test for Parkeringsplass",
+    "pris" : 400.0,
+    "pictureUrl" : "https://elanto.no/wp-content/uploads/2020/05/IMG_3843-1024x768.jpg",
+    "id" : 0,
+    "status" : false,
+    "sted" : "Oslo",
+    "adresse" : "Slottsplassen 10",
+    "epost" : null
+  } ],
+  "name" : "Oslo"
+} ]

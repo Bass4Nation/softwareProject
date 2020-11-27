@@ -1,0 +1,74 @@
+[ {
+  "telefonnummer" : "123456789",
+  "navn" : "Ola Nordman",
+  "passord" : "findparking",
+  "annonserId" : [ 0, 2, 4 ],
+  "annonser" : [ {
+    "telefonnummer" : null,
+    "beskrivelse" : "Dorime noe rart beskrivelse",
+    "tittel" : "En fin plass i Moss",
+    "pris" : 50.0,
+    "pictureUrl" : "https://mediadc.brightspotcdn.com/dims4/default/7911b12/2147483647/strip/true/crop/2290x1322+0+0/resize/2290x1322!/quality/90/?url=https%3A%2F%2Fmediadc.brightspotcdn.com%2F62%2F05%2Fbbcbb53c660de0e2576a8de0491d%2Fe023efc13eb249b7634a4046b6fe6800.jpg",
+    "id" : 0,
+    "status" : false,
+    "epost" : null,
+    "adresse" : "Mosseporten 20",
+    "sted" : "Moss"
+  }, {
+    "telefonnummer" : null,
+    "beskrivelse" : "Dette er annonse 1 i Oslo",
+    "tittel" : "Billig plass i Rakkestad",
+    "pris" : 20.0,
+    "pictureUrl" : "https://www.goturpin.com/pages/news-and-announcements/image/section-image/parking-8.jpg",
+    "id" : 2,
+    "status" : false,
+    "epost" : null,
+    "adresse" : "Haldenveien 1374",
+    "sted" : "Rakkestad"
+  }, {
+    "telefonnummer" : null,
+    "beskrivelse" : "Dette er annonse 1 i Oslo",
+    "tittel" : "Billig plass i Oslo",
+    "pris" : 200.0,
+    "pictureUrl" : "https://www.goturpin.com/pages/news-and-announcements/image/section-image/parking-8.jpg",
+    "id" : 4,
+    "status" : false,
+    "epost" : null,
+    "adresse" : "Kongsgate 10",
+    "sted" : "Oslo"
+  }],
+  "adresse" : "Adresse 12B",
+  "epost" : "find@parking.no",
+  "sted" : null
+}, {
+  "telefonnummer" : "99998877",
+  "navn" : "Admin",
+  "passord" : "admin",
+  "annonserId" : [ 1, 3 ],
+  "annonser" : [ {
+    "telefonnummer" : null,
+    "beskrivelse" : "Dette er annonse 2 beskrivelse",
+    "tittel" : "Billig plass i Sarpsborg",
+    "pris" : 20.0,
+    "pictureUrl" : "https://www.goturpin.com/pages/news-and-announcements/image/section-image/parking-8.jpg",
+    "id" : 1,
+    "status" : false,
+    "epost" : null,
+    "adresse" : "Sarpeveien 19",
+    "sted" : "Sarpsborg"
+  }, {
+    "telefonnummer" : null,
+    "beskrivelse" : "TASIDGHIUASDHIAUOSHDIOUAS",
+    "tittel" : "En annen plass i Halden",
+    "pris" : 10.0,
+    "pictureUrl" : "https://cdn.abcotvs.com/dip/images/5896174_013120-kgo-parking-spot-img_Image_00-00-59,06.jpg?w=1600",
+    "id" : 3,
+    "status" : false,
+    "epost" : null,
+    "adresse" : "Solveien 12C",
+    "sted" : "Halden"
+  }],
+  "adresse" : "Adresse 10C",
+  "epost" : "admin",
+  "sted" : null
+} ]
